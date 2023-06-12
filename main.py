@@ -2,7 +2,7 @@ import random
 import time
 import mpv
 import requests
-import wiringpi
+# import wiringpi
 
 from PIL import Image, ImageDraw, ImageFont
 
@@ -31,8 +31,8 @@ while True:
     rnd_index = random.randint(0, 4)
     rnd_json = random.randint(0, 19)
     
-    # time.sleep(rnd_time)
-    wiringpi.delay(rnd_time * 1000)
+    time.sleep(rnd_time)
+    # wiringpi.delay(rnd_time * 1000)
 
     response = requests.get(f'{BASE_URL}/products')
     data = response.json()
@@ -57,4 +57,5 @@ while True:
         overlay.update(img, pos=(20, 400))
     
     # if url_str == 39.99:
-    player.playlist_play_index(rnd_index)
+    print(rnd_index)
+    player.playlist_play_index(4)
