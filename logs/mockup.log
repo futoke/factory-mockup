@@ -1,0 +1,287 @@
+2023-06-13 14:08:02,343 ERROR PID_25230 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/main-1.py", line 34, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-13 14:08:10,361 ERROR PID_25230 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/main-1.py", line 34, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-13 14:08:18,371 ERROR PID_25230 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/main-1.py", line 34, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-13 14:08:26,388 ERROR PID_25230 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/main-1.py", line 34, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-13 14:08:34,399 ERROR PID_25230 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/main-1.py", line 34, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-13 14:08:42,415 ERROR PID_25230 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/main-1.py", line 34, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-13 14:11:45,850 INFO PID_26722 Receive response from modbus server: 4
+2023-06-13 14:11:53,954 INFO PID_26722 Receive response from modbus server: 1
+2023-06-13 14:12:01,969 INFO PID_26722 Receive response from modbus server: 4
+2023-06-13 14:12:09,980 INFO PID_26722 Receive response from modbus server: 3
+2023-06-13 14:12:17,994 INFO PID_26722 Receive response from modbus server: 2
+2023-06-13 14:12:26,005 INFO PID_26722 Receive response from modbus server: 3
+2023-06-13 14:12:34,023 INFO PID_26722 Receive response from modbus server: 4
+2023-06-13 14:12:42,035 INFO PID_26722 Receive response from modbus server: 2
+2023-06-13 14:12:50,048 INFO PID_26722 Receive response from modbus server: 1
+2023-06-13 14:12:58,161 INFO PID_26722 Receive response from modbus server: 3
+2023-06-13 14:13:06,256 INFO PID_26722 Receive response from modbus server: 3
+2023-06-13 14:13:14,268 INFO PID_26722 Receive response from modbus server: 5
+2023-06-13 14:13:22,329 INFO PID_26722 Receive response from modbus server: 4
+2023-06-13 14:13:30,378 INFO PID_26722 Receive response from modbus server: 5
+2023-06-13 14:13:38,397 INFO PID_26722 Receive response from modbus server: 5
+2023-06-13 14:13:46,408 INFO PID_26722 Receive response from modbus server: 5
+2023-06-13 14:13:54,415 INFO PID_26722 Receive response from modbus server: 2
+2023-06-13 14:14:02,434 INFO PID_26722 Receive response from modbus server: 5
+2023-06-13 14:14:10,507 INFO PID_26722 Receive response from modbus server: 4
+2023-06-13 14:14:18,550 INFO PID_26722 Receive response from modbus server: 5
+2023-06-13 14:14:26,701 INFO PID_26722 Receive response from modbus server: 2
+2023-06-13 14:14:34,724 INFO PID_26722 Receive response from modbus server: 4
+2023-06-13 14:14:42,737 INFO PID_26722 Receive response from modbus server: 5
+2023-06-13 14:14:50,760 INFO PID_26722 Receive response from modbus server: 5
+2023-06-13 14:14:58,786 INFO PID_26722 Receive response from modbus server: 1
+2023-06-13 14:15:06,907 INFO PID_26722 Receive response from modbus server: 4
+2023-06-13 14:15:14,920 INFO PID_26722 Receive response from modbus server: 5
+2023-06-13 14:15:22,929 INFO PID_26722 Receive response from modbus server: 5
+2023-06-13 14:15:30,938 INFO PID_26722 Receive response from modbus server: 1
+2023-06-13 14:15:38,950 INFO PID_26722 Receive response from modbus server: 3
+2023-06-13 14:15:46,961 INFO PID_26722 Receive response from modbus server: 3
+2023-06-13 14:15:54,970 INFO PID_26722 Receive response from modbus server: 5
+2023-06-13 14:16:02,981 INFO PID_26722 Receive response from modbus server: 5
+2023-06-13 14:16:10,989 INFO PID_26722 Receive response from modbus server: 4
+2023-06-13 14:16:18,999 INFO PID_26722 Receive response from modbus server: 5
+2023-06-13 14:16:27,009 INFO PID_26722 Receive response from modbus server: 4
+2023-06-13 14:16:35,020 INFO PID_26722 Receive response from modbus server: 1
+2023-06-13 14:16:43,031 INFO PID_26722 Receive response from modbus server: 1
+2023-06-13 14:16:51,120 INFO PID_26722 Receive response from modbus server: 1
+2023-06-13 14:16:59,158 INFO PID_26722 Receive response from modbus server: 2
+2023-06-13 14:17:07,172 INFO PID_26722 Receive response from modbus server: 5
+2023-06-13 14:17:15,184 INFO PID_26722 Receive response from modbus server: 3
+2023-06-13 14:17:23,210 INFO PID_26722 Receive response from modbus server: 2
+2023-06-13 14:17:31,219 INFO PID_26722 Receive response from modbus server: 2
+2023-06-13 14:17:39,228 INFO PID_26722 Receive response from modbus server: 1
+2023-06-13 14:17:47,237 INFO PID_26722 Receive response from modbus server: 5
+2023-06-13 14:17:55,273 INFO PID_26722 Receive response from modbus server: 3
+2023-06-13 14:18:03,381 INFO PID_26722 Receive response from modbus server: 4
+2023-06-13 14:18:11,479 INFO PID_26722 Receive response from modbus server: 5
+2023-06-13 14:18:19,533 INFO PID_26722 Receive response from modbus server: 5
+2023-06-13 14:18:27,641 INFO PID_26722 Receive response from modbus server: 1
+2023-06-13 14:18:35,668 INFO PID_26722 Receive response from modbus server: 4
+2023-06-13 14:18:43,766 INFO PID_26722 Receive response from modbus server: 5
+2023-06-13 14:18:51,809 INFO PID_26722 Receive response from modbus server: 2
+2023-06-13 14:18:59,834 INFO PID_26722 Receive response from modbus server: 2
+2023-06-13 14:19:07,844 INFO PID_26722 Receive response from modbus server: 4
+2023-06-13 14:19:15,851 INFO PID_26722 Receive response from modbus server: 1
+2023-06-13 14:19:20,911 INFO PID 29659 Start player
+2023-06-13 14:19:20,923 INFO PID 29659 Receive response from modbus server: 2
+2023-06-13 14:19:28,938 INFO PID 29659 Receive response from modbus server: 3
+2023-06-13 14:19:36,947 INFO PID 29659 Receive response from modbus server: 2
+2023-06-13 14:19:44,956 INFO PID 29659 Receive response from modbus server: 4
+2023-06-13 14:19:52,965 INFO PID 29659 Receive response from modbus server: 2
+2023-06-13 14:20:00,974 INFO PID 29659 Receive response from modbus server: 4
+2023-06-13 14:20:08,984 INFO PID 29659 Receive response from modbus server: 2
+2023-06-13 14:20:16,995 INFO PID 29659 Receive response from modbus server: 3
+2023-06-13 14:20:25,006 INFO PID 29659 Receive response from modbus server: 4
+2023-06-13 14:20:33,058 INFO PID 29659 Receive response from modbus server: 2
+2023-06-13 14:20:41,071 INFO PID 29659 Receive response from modbus server: 4
+2023-06-13 14:20:49,082 INFO PID 29659 Receive response from modbus server: 2
+2023-06-13 14:20:57,092 INFO PID 29659 Receive response from modbus server: 5
+2023-06-13 14:21:05,104 INFO PID 29659 Receive response from modbus server: 3
+2023-06-13 14:21:13,111 INFO PID 29659 Receive response from modbus server: 4
+2023-06-13 14:21:21,120 INFO PID 29659 Receive response from modbus server: 2
+2023-06-13 14:21:29,129 INFO PID 29659 Receive response from modbus server: 3
+2023-06-13 14:21:37,140 INFO PID 29659 Receive response from modbus server: 3
+2023-06-13 14:21:45,149 INFO PID 29659 Receive response from modbus server: 3
+2023-06-13 14:21:53,160 INFO PID 29659 Receive response from modbus server: 3
+2023-06-13 14:22:01,172 INFO PID 29659 Receive response from modbus server: 4
+2023-06-13 14:22:09,183 INFO PID 29659 Receive response from modbus server: 5
+2023-06-13 14:22:17,192 INFO PID 29659 Receive response from modbus server: 1
+2023-06-13 14:22:25,203 INFO PID 29659 Receive response from modbus server: 3
+2023-06-13 14:22:33,213 INFO PID 29659 Receive response from modbus server: 4
+2023-06-13 14:22:41,224 INFO PID 29659 Receive response from modbus server: 2
+2023-06-13 14:22:49,234 INFO PID 29659 Receive response from modbus server: 3
+2023-06-13 14:22:57,245 INFO PID 29659 Receive response from modbus server: 3
+2023-06-13 14:23:05,253 INFO PID 29659 Receive response from modbus server: 2
+2023-06-13 14:23:13,262 INFO PID 29659 Receive response from modbus server: 5
+2023-06-13 14:23:21,271 INFO PID 29659 Receive response from modbus server: 2
+2023-06-13 14:23:29,283 INFO PID 29659 Receive response from modbus server: 3
+2023-06-13 14:23:37,292 INFO PID 29659 Receive response from modbus server: 1
+2023-06-13 14:23:45,301 INFO PID 29659 Receive response from modbus server: 3
+2023-06-13 14:23:53,310 INFO PID 29659 Receive response from modbus server: 4
+2023-06-13 14:24:01,319 INFO PID 29659 Receive response from modbus server: 4
+2023-06-13 14:24:09,327 INFO PID 29659 Receive response from modbus server: 4
+2023-06-13 14:24:17,336 INFO PID 29659 Receive response from modbus server: 2
+2023-06-13 14:24:25,345 INFO PID 29659 Receive response from modbus server: 5
+2023-06-13 14:24:33,354 INFO PID 29659 Receive response from modbus server: 2
+2023-06-13 14:24:41,363 INFO PID 29659 Receive response from modbus server: 4
+2023-06-13 14:24:49,374 INFO PID 29659 Receive response from modbus server: 5
+2023-06-13 14:24:57,383 INFO PID 29659 Receive response from modbus server: 4
+2023-06-13 14:25:05,397 INFO PID 29659 Receive response from modbus server: 1
+2023-06-13 14:25:13,407 INFO PID 29659 Receive response from modbus server: 4
+2023-06-13 14:25:21,416 INFO PID 29659 Receive response from modbus server: 2
+2023-06-13 14:25:29,426 INFO PID 29659 Receive response from modbus server: 4
+2023-06-13 14:25:37,439 INFO PID 29659 Receive response from modbus server: 1
+2023-06-13 14:25:45,457 INFO PID 29659 Receive response from modbus server: 4
+2023-06-13 14:25:53,466 INFO PID 29659 Receive response from modbus server: 4
+2023-06-13 14:26:01,483 INFO PID 29659 Receive response from modbus server: 4
+2023-06-13 14:26:09,493 INFO PID 29659 Receive response from modbus server: 4
+2023-06-13 14:26:17,503 INFO PID 29659 Receive response from modbus server: 4
+2023-06-13 14:26:25,512 INFO PID 29659 Receive response from modbus server: 3
+2023-06-13 14:26:33,521 INFO PID 29659 Receive response from modbus server: 5
+2023-06-13 14:26:41,533 INFO PID 29659 Receive response from modbus server: 3
+2023-06-13 14:26:49,542 INFO PID 29659 Receive response from modbus server: 5
+2023-06-13 14:26:57,551 INFO PID 29659 Receive response from modbus server: 3
+2023-06-13 14:27:05,559 INFO PID 29659 Receive response from modbus server: 3
+2023-06-13 14:27:13,569 INFO PID 29659 Receive response from modbus server: 3
+2023-06-13 14:27:21,583 INFO PID 29659 Receive response from modbus server: 2
+2023-06-13 14:27:29,594 INFO PID 29659 Receive response from modbus server: 3
+2023-06-13 14:27:37,604 INFO PID 29659 Receive response from modbus server: 3
+2023-06-13 14:27:45,614 INFO PID 29659 Receive response from modbus server: 5
+2023-06-13 14:27:53,625 INFO PID 29659 Receive response from modbus server: 5
+2023-06-13 14:28:01,640 INFO PID 29659 Receive response from modbus server: 1
+2023-06-13 14:28:09,647 INFO PID 29659 Receive response from modbus server: 2
+2023-06-13 14:28:17,655 INFO PID 29659 Receive response from modbus server: 5
+2023-06-13 14:28:25,667 INFO PID 29659 Receive response from modbus server: 2
+2023-06-13 14:28:33,676 INFO PID 29659 Receive response from modbus server: 3
+2023-06-13 14:28:41,683 INFO PID 29659 Receive response from modbus server: 2
+2023-06-13 14:28:49,693 INFO PID 29659 Receive response from modbus server: 3
+2023-06-13 14:28:57,703 INFO PID 29659 Receive response from modbus server: 2
+2023-06-13 14:29:05,712 INFO PID 29659 Receive response from modbus server: 5
+2023-06-13 14:29:13,720 INFO PID 29659 Receive response from modbus server: 2
+2023-06-13 14:29:21,729 INFO PID 29659 Receive response from modbus server: 5
+2023-06-13 14:29:29,737 INFO PID 29659 Receive response from modbus server: 2
+2023-06-13 14:29:37,748 INFO PID 29659 Receive response from modbus server: 5
+2023-06-13 14:29:45,758 INFO PID 29659 Receive response from modbus server: 3
+2023-06-13 14:29:53,770 INFO PID 29659 Receive response from modbus server: 3
+2023-06-13 14:30:01,781 INFO PID 29659 Receive response from modbus server: 2
+2023-06-13 14:30:09,791 INFO PID 29659 Receive response from modbus server: 5
+2023-06-13 14:30:17,804 INFO PID 29659 Receive response from modbus server: 3
+2023-06-13 14:30:25,813 INFO PID 29659 Receive response from modbus server: 4
+2023-06-13 14:30:33,822 INFO PID 29659 Receive response from modbus server: 3
+2023-06-13 14:30:41,831 INFO PID 29659 Receive response from modbus server: 3
+2023-06-13 14:30:49,842 INFO PID 29659 Receive response from modbus server: 5
+2023-06-13 14:30:57,850 INFO PID 29659 Receive response from modbus server: 4
+2023-06-13 14:31:05,862 INFO PID 29659 Receive response from modbus server: 2
+2023-06-13 14:31:13,874 INFO PID 29659 Receive response from modbus server: 3
+2023-06-13 14:31:21,883 INFO PID 29659 Receive response from modbus server: 4
+2023-06-13 14:31:29,894 INFO PID 29659 Receive response from modbus server: 5
+2023-06-13 14:31:37,905 INFO PID 29659 Receive response from modbus server: 4
+2023-06-13 14:31:45,913 INFO PID 29659 Receive response from modbus server: 5
+2023-06-13 14:31:53,924 INFO PID 29659 Receive response from modbus server: 1
+2023-06-13 14:32:01,933 INFO PID 29659 Receive response from modbus server: 4
+2023-06-13 14:32:09,945 INFO PID 29659 Receive response from modbus server: 5
+2023-06-13 14:32:17,956 INFO PID 29659 Receive response from modbus server: 3
+2023-06-13 14:32:25,967 INFO PID 29659 Receive response from modbus server: 3
+2023-06-13 14:32:33,976 INFO PID 29659 Receive response from modbus server: 4
+2023-06-13 14:32:41,986 INFO PID 29659 Receive response from modbus server: 2
+2023-06-13 14:32:49,995 INFO PID 29659 Receive response from modbus server: 2
+2023-06-13 14:32:58,007 INFO PID 29659 Receive response from modbus server: 1
+2023-06-13 14:33:06,016 INFO PID 29659 Receive response from modbus server: 4
+2023-06-13 14:33:14,029 INFO PID 29659 Receive response from modbus server: 3
+2023-06-13 14:33:22,041 INFO PID 29659 Receive response from modbus server: 3
+2023-06-13 14:33:30,052 INFO PID 29659 Receive response from modbus server: 1
+2023-06-13 14:33:38,064 INFO PID 29659 Receive response from modbus server: 2
+2023-06-13 14:33:46,073 INFO PID 29659 Receive response from modbus server: 1
+2023-06-13 14:33:54,083 INFO PID 29659 Receive response from modbus server: 5
+2023-06-13 14:34:02,095 INFO PID 29659 Receive response from modbus server: 1
+2023-06-13 14:34:10,107 INFO PID 29659 Receive response from modbus server: 2
+2023-06-13 14:34:18,122 INFO PID 29659 Receive response from modbus server: 5
+2023-06-13 14:36:14,858 INFO PID 34708 Start player
+2023-06-13 14:36:14,868 INFO PID 34708 Receive response from modbus server: 1
+2023-06-13 14:36:22,878 INFO PID 34708 Receive response from modbus server: 3
+2023-06-13 14:38:07,585 INFO PID 34965 Start player
+2023-06-13 14:38:07,587 INFO PID 34965 Playing video file 4.mp4
+2023-06-13 14:38:07,598 INFO PID 34965 Receive response from modbus server: 4
+2023-06-13 14:38:15,598 INFO PID 34965 Playing video file 3.mp4
+2023-06-13 14:38:15,648 INFO PID 34965 Receive response from modbus server: 3
+2023-06-13 14:38:23,648 INFO PID 34965 Playing video file 4.mp4
+2023-06-13 14:38:23,659 INFO PID 34965 Receive response from modbus server: 4
+2023-06-13 14:38:31,660 INFO PID 34965 Playing video file 3.mp4
+2023-06-13 14:38:31,668 INFO PID 34965 Receive response from modbus server: 3
+2023-06-13 14:38:39,668 INFO PID 34965 Playing video file 5.mp4
+2023-06-13 14:38:39,677 INFO PID 34965 Receive response from modbus server: 5
+2023-06-13 14:38:47,678 INFO PID 34965 Playing video file 3.mp4
+2023-06-13 14:38:47,687 INFO PID 34965 Receive response from modbus server: 3
+2023-06-13 14:38:55,687 INFO PID 34965 Playing video file 5.mp4
+2023-06-13 14:38:55,698 INFO PID 34965 Receive response from modbus server: 5
+2023-06-13 14:39:03,699 INFO PID 34965 Playing video file 2.mp4
+2023-06-13 14:39:03,710 INFO PID 34965 Receive response from modbus server: 2
+2023-06-13 14:39:11,711 INFO PID 34965 Playing video file 3.mp4
+2023-06-13 14:39:11,721 INFO PID 34965 Receive response from modbus server: 3
+2023-06-13 14:39:19,722 INFO PID 34965 Playing video file 2.mp4
+2023-06-13 14:39:19,730 INFO PID 34965 Receive response from modbus server: 2
+2023-06-13 14:39:27,731 INFO PID 34965 Playing video file 5.mp4
+2023-06-13 14:39:27,740 INFO PID 34965 Receive response from modbus server: 5
+2023-06-13 14:39:35,742 INFO PID 34965 Playing video file 1.mp4
+2023-06-13 14:39:35,752 INFO PID 34965 Receive response from modbus server: 1
+2023-06-13 14:39:43,752 INFO PID 34965 Playing video file 4.mp4
+2023-06-13 14:39:43,765 INFO PID 34965 Receive response from modbus server: 4
+2023-06-13 14:39:51,765 INFO PID 34965 Playing video file 3.mp4
+2023-06-13 14:39:51,773 INFO PID 34965 Receive response from modbus server: 3
+2023-06-13 14:39:59,773 INFO PID 34965 Playing video file 3.mp4
+2023-06-13 14:39:59,783 INFO PID 34965 Receive response from modbus server: 3
+2023-06-13 14:40:07,784 INFO PID 34965 Playing video file 3.mp4
+2023-06-13 14:40:07,791 INFO PID 34965 Receive response from modbus server: 3
+2023-06-13 14:40:15,792 INFO PID 34965 Playing video file 5.mp4
+2023-06-13 14:40:15,799 INFO PID 34965 Receive response from modbus server: 5
+2023-06-13 14:40:23,800 INFO PID 34965 Playing video file 2.mp4
+2023-06-13 14:40:23,810 INFO PID 34965 Receive response from modbus server: 2
+2023-06-13 14:40:31,811 INFO PID 34965 Playing video file 4.mp4
+2023-06-13 14:40:31,820 INFO PID 34965 Receive response from modbus server: 4
+2023-06-13 14:40:39,821 INFO PID 34965 Playing video file 4.mp4
+2023-06-13 14:40:39,828 INFO PID 34965 Receive response from modbus server: 4
+2023-06-13 14:40:47,829 INFO PID 34965 Playing video file 4.mp4
+2023-06-13 14:40:47,837 INFO PID 34965 Receive response from modbus server: 4
+2023-06-13 14:40:55,837 INFO PID 34965 Playing video file 2.mp4
+2023-06-13 14:40:55,845 INFO PID 34965 Receive response from modbus server: 2
+2023-06-13 14:41:03,846 INFO PID 34965 Playing video file 5.mp4
+2023-06-13 14:41:03,860 INFO PID 34965 Receive response from modbus server: 5
+2023-06-13 14:41:11,861 INFO PID 34965 Playing video file 4.mp4
+2023-06-13 14:41:11,870 INFO PID 34965 Receive response from modbus server: 4
+2023-06-13 14:41:19,871 INFO PID 34965 Playing video file 2.mp4
+2023-06-13 14:41:19,884 INFO PID 34965 Receive response from modbus server: 2
+2023-06-13 14:41:27,885 INFO PID 34965 Playing video file 1.mp4
+2023-06-13 14:41:27,893 INFO PID 34965 Receive response from modbus server: 1
+2023-06-13 14:41:35,894 INFO PID 34965 Playing video file 1.mp4
+2023-06-13 14:41:35,905 INFO PID 34965 Receive response from modbus server: 1
+2023-06-13 14:41:43,906 INFO PID 34965 Playing video file 3.mp4
+2023-06-13 14:41:43,918 INFO PID 34965 Receive response from modbus server: 3
+2023-06-13 14:41:51,919 INFO PID 34965 Playing video file 3.mp4
+2023-06-13 14:41:51,928 INFO PID 34965 Receive response from modbus server: 3
+2023-06-13 14:41:59,929 INFO PID 34965 Playing video file 1.mp4
+2023-06-13 14:41:59,938 INFO PID 34965 Receive response from modbus server: 1
+2023-06-13 14:42:07,939 INFO PID 34965 Playing video file 5.mp4
+2023-06-13 14:42:07,950 INFO PID 34965 Receive response from modbus server: 5
+2023-06-13 14:42:15,950 INFO PID 34965 Playing video file 4.mp4
+2023-06-13 14:42:15,958 INFO PID 34965 Receive response from modbus server: 4
+2023-06-13 14:42:23,958 INFO PID 34965 Playing video file 5.mp4
+2023-06-13 14:42:23,969 INFO PID 34965 Receive response from modbus server: 5
+2023-06-13 14:42:31,969 INFO PID 34965 Playing video file 5.mp4
+2023-06-13 14:42:31,979 INFO PID 34965 Receive response from modbus server: 5
+2023-06-13 14:42:39,980 INFO PID 34965 Playing video file 1.mp4
+2023-06-13 14:42:39,990 INFO PID 34965 Receive response from modbus server: 1
+2023-06-13 14:42:47,990 INFO PID 34965 Playing video file 3.mp4
+2023-06-13 14:42:48,002 INFO PID 34965 Receive response from modbus server: 3
+2023-06-13 14:42:56,003 INFO PID 34965 Playing video file 2.mp4
+2023-06-13 14:42:56,044 INFO PID 34965 Receive response from modbus server: 2
+2023-06-13 14:43:04,044 INFO PID 34965 Playing video file 5.mp4
+2023-06-13 14:43:04,057 INFO PID 34965 Receive response from modbus server: 5
+2023-06-13 14:43:12,057 INFO PID 34965 Playing video file 5.mp4
+2023-06-13 14:43:12,070 INFO PID 34965 Receive response from modbus server: 5
+2023-06-13 14:43:20,070 INFO PID 34965 Playing video file 3.mp4
+2023-06-13 14:43:20,080 INFO PID 34965 Receive response from modbus server: 3
+2023-06-13 14:43:28,081 INFO PID 34965 Playing video file 3.mp4
+2023-06-13 14:43:28,097 INFO PID 34965 Receive response from modbus server: 3
