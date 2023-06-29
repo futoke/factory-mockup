@@ -1,9 +1,7 @@
-from gpiozero import Button
+from gpiozero import LED
+from time import sleep
 
-button = Button(26)
 
-while True:
-    if button.is_pressed:
-        print("Meow")
-    else:
-        print("Button is not pressed")
+for led_num in range(2, 27):
+    led = LED(led_num)
+    led.on()
