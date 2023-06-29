@@ -1,287 +1,1235 @@
-2023-06-13 14:08:02,343 ERROR PID_25230 Exception occurred
+2023-06-18 20:45:21,152 ERROR PID 13361 Exception occurred
 Traceback (most recent call last):
-  File "/home/ichiro/factory-mockup/main-1.py", line 34, in send_data
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
     sock.connect((MODBUS_IP, MODBUS_PORT))
 ConnectionRefusedError: [Errno 111] Connection refused
-2023-06-13 14:08:10,361 ERROR PID_25230 Exception occurred
+2023-06-18 20:45:21,214 INFO PID 13361 Playing video file 5.mp4
+2023-06-18 20:45:21,371 ERROR PID 13361 Exception occurred
 Traceback (most recent call last):
-  File "/home/ichiro/factory-mockup/main-1.py", line 34, in send_data
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
     sock.connect((MODBUS_IP, MODBUS_PORT))
 ConnectionRefusedError: [Errno 111] Connection refused
-2023-06-13 14:08:18,371 ERROR PID_25230 Exception occurred
+2023-06-18 20:45:22,640 INFO PID 13361 Playing video file 2.mp4
+2023-06-18 20:45:22,728 ERROR PID 13361 Exception occurred
 Traceback (most recent call last):
-  File "/home/ichiro/factory-mockup/main-1.py", line 34, in send_data
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
     sock.connect((MODBUS_IP, MODBUS_PORT))
 ConnectionRefusedError: [Errno 111] Connection refused
-2023-06-13 14:08:26,388 ERROR PID_25230 Exception occurred
+2023-06-18 20:45:22,785 INFO PID 13361 Playing video file 3.mp4
+2023-06-18 20:45:22,955 ERROR PID 13361 Exception occurred
 Traceback (most recent call last):
-  File "/home/ichiro/factory-mockup/main-1.py", line 34, in send_data
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
     sock.connect((MODBUS_IP, MODBUS_PORT))
 ConnectionRefusedError: [Errno 111] Connection refused
-2023-06-13 14:08:34,399 ERROR PID_25230 Exception occurred
+2023-06-18 20:45:25,399 INFO PID 13361 Playing video file 1.mp4
+2023-06-18 20:45:25,471 ERROR PID 13361 Exception occurred
 Traceback (most recent call last):
-  File "/home/ichiro/factory-mockup/main-1.py", line 34, in send_data
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
     sock.connect((MODBUS_IP, MODBUS_PORT))
 ConnectionRefusedError: [Errno 111] Connection refused
-2023-06-13 14:08:42,415 ERROR PID_25230 Exception occurred
+2023-06-18 20:45:25,526 INFO PID 13361 Playing video file 4.mp4
+2023-06-18 20:45:25,714 ERROR PID 13361 Exception occurred
 Traceback (most recent call last):
-  File "/home/ichiro/factory-mockup/main-1.py", line 34, in send_data
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
     sock.connect((MODBUS_IP, MODBUS_PORT))
 ConnectionRefusedError: [Errno 111] Connection refused
-2023-06-13 14:11:45,850 INFO PID_26722 Receive response from modbus server: 4
-2023-06-13 14:11:53,954 INFO PID_26722 Receive response from modbus server: 1
-2023-06-13 14:12:01,969 INFO PID_26722 Receive response from modbus server: 4
-2023-06-13 14:12:09,980 INFO PID_26722 Receive response from modbus server: 3
-2023-06-13 14:12:17,994 INFO PID_26722 Receive response from modbus server: 2
-2023-06-13 14:12:26,005 INFO PID_26722 Receive response from modbus server: 3
-2023-06-13 14:12:34,023 INFO PID_26722 Receive response from modbus server: 4
-2023-06-13 14:12:42,035 INFO PID_26722 Receive response from modbus server: 2
-2023-06-13 14:12:50,048 INFO PID_26722 Receive response from modbus server: 1
-2023-06-13 14:12:58,161 INFO PID_26722 Receive response from modbus server: 3
-2023-06-13 14:13:06,256 INFO PID_26722 Receive response from modbus server: 3
-2023-06-13 14:13:14,268 INFO PID_26722 Receive response from modbus server: 5
-2023-06-13 14:13:22,329 INFO PID_26722 Receive response from modbus server: 4
-2023-06-13 14:13:30,378 INFO PID_26722 Receive response from modbus server: 5
-2023-06-13 14:13:38,397 INFO PID_26722 Receive response from modbus server: 5
-2023-06-13 14:13:46,408 INFO PID_26722 Receive response from modbus server: 5
-2023-06-13 14:13:54,415 INFO PID_26722 Receive response from modbus server: 2
-2023-06-13 14:14:02,434 INFO PID_26722 Receive response from modbus server: 5
-2023-06-13 14:14:10,507 INFO PID_26722 Receive response from modbus server: 4
-2023-06-13 14:14:18,550 INFO PID_26722 Receive response from modbus server: 5
-2023-06-13 14:14:26,701 INFO PID_26722 Receive response from modbus server: 2
-2023-06-13 14:14:34,724 INFO PID_26722 Receive response from modbus server: 4
-2023-06-13 14:14:42,737 INFO PID_26722 Receive response from modbus server: 5
-2023-06-13 14:14:50,760 INFO PID_26722 Receive response from modbus server: 5
-2023-06-13 14:14:58,786 INFO PID_26722 Receive response from modbus server: 1
-2023-06-13 14:15:06,907 INFO PID_26722 Receive response from modbus server: 4
-2023-06-13 14:15:14,920 INFO PID_26722 Receive response from modbus server: 5
-2023-06-13 14:15:22,929 INFO PID_26722 Receive response from modbus server: 5
-2023-06-13 14:15:30,938 INFO PID_26722 Receive response from modbus server: 1
-2023-06-13 14:15:38,950 INFO PID_26722 Receive response from modbus server: 3
-2023-06-13 14:15:46,961 INFO PID_26722 Receive response from modbus server: 3
-2023-06-13 14:15:54,970 INFO PID_26722 Receive response from modbus server: 5
-2023-06-13 14:16:02,981 INFO PID_26722 Receive response from modbus server: 5
-2023-06-13 14:16:10,989 INFO PID_26722 Receive response from modbus server: 4
-2023-06-13 14:16:18,999 INFO PID_26722 Receive response from modbus server: 5
-2023-06-13 14:16:27,009 INFO PID_26722 Receive response from modbus server: 4
-2023-06-13 14:16:35,020 INFO PID_26722 Receive response from modbus server: 1
-2023-06-13 14:16:43,031 INFO PID_26722 Receive response from modbus server: 1
-2023-06-13 14:16:51,120 INFO PID_26722 Receive response from modbus server: 1
-2023-06-13 14:16:59,158 INFO PID_26722 Receive response from modbus server: 2
-2023-06-13 14:17:07,172 INFO PID_26722 Receive response from modbus server: 5
-2023-06-13 14:17:15,184 INFO PID_26722 Receive response from modbus server: 3
-2023-06-13 14:17:23,210 INFO PID_26722 Receive response from modbus server: 2
-2023-06-13 14:17:31,219 INFO PID_26722 Receive response from modbus server: 2
-2023-06-13 14:17:39,228 INFO PID_26722 Receive response from modbus server: 1
-2023-06-13 14:17:47,237 INFO PID_26722 Receive response from modbus server: 5
-2023-06-13 14:17:55,273 INFO PID_26722 Receive response from modbus server: 3
-2023-06-13 14:18:03,381 INFO PID_26722 Receive response from modbus server: 4
-2023-06-13 14:18:11,479 INFO PID_26722 Receive response from modbus server: 5
-2023-06-13 14:18:19,533 INFO PID_26722 Receive response from modbus server: 5
-2023-06-13 14:18:27,641 INFO PID_26722 Receive response from modbus server: 1
-2023-06-13 14:18:35,668 INFO PID_26722 Receive response from modbus server: 4
-2023-06-13 14:18:43,766 INFO PID_26722 Receive response from modbus server: 5
-2023-06-13 14:18:51,809 INFO PID_26722 Receive response from modbus server: 2
-2023-06-13 14:18:59,834 INFO PID_26722 Receive response from modbus server: 2
-2023-06-13 14:19:07,844 INFO PID_26722 Receive response from modbus server: 4
-2023-06-13 14:19:15,851 INFO PID_26722 Receive response from modbus server: 1
-2023-06-13 14:19:20,911 INFO PID 29659 Start player
-2023-06-13 14:19:20,923 INFO PID 29659 Receive response from modbus server: 2
-2023-06-13 14:19:28,938 INFO PID 29659 Receive response from modbus server: 3
-2023-06-13 14:19:36,947 INFO PID 29659 Receive response from modbus server: 2
-2023-06-13 14:19:44,956 INFO PID 29659 Receive response from modbus server: 4
-2023-06-13 14:19:52,965 INFO PID 29659 Receive response from modbus server: 2
-2023-06-13 14:20:00,974 INFO PID 29659 Receive response from modbus server: 4
-2023-06-13 14:20:08,984 INFO PID 29659 Receive response from modbus server: 2
-2023-06-13 14:20:16,995 INFO PID 29659 Receive response from modbus server: 3
-2023-06-13 14:20:25,006 INFO PID 29659 Receive response from modbus server: 4
-2023-06-13 14:20:33,058 INFO PID 29659 Receive response from modbus server: 2
-2023-06-13 14:20:41,071 INFO PID 29659 Receive response from modbus server: 4
-2023-06-13 14:20:49,082 INFO PID 29659 Receive response from modbus server: 2
-2023-06-13 14:20:57,092 INFO PID 29659 Receive response from modbus server: 5
-2023-06-13 14:21:05,104 INFO PID 29659 Receive response from modbus server: 3
-2023-06-13 14:21:13,111 INFO PID 29659 Receive response from modbus server: 4
-2023-06-13 14:21:21,120 INFO PID 29659 Receive response from modbus server: 2
-2023-06-13 14:21:29,129 INFO PID 29659 Receive response from modbus server: 3
-2023-06-13 14:21:37,140 INFO PID 29659 Receive response from modbus server: 3
-2023-06-13 14:21:45,149 INFO PID 29659 Receive response from modbus server: 3
-2023-06-13 14:21:53,160 INFO PID 29659 Receive response from modbus server: 3
-2023-06-13 14:22:01,172 INFO PID 29659 Receive response from modbus server: 4
-2023-06-13 14:22:09,183 INFO PID 29659 Receive response from modbus server: 5
-2023-06-13 14:22:17,192 INFO PID 29659 Receive response from modbus server: 1
-2023-06-13 14:22:25,203 INFO PID 29659 Receive response from modbus server: 3
-2023-06-13 14:22:33,213 INFO PID 29659 Receive response from modbus server: 4
-2023-06-13 14:22:41,224 INFO PID 29659 Receive response from modbus server: 2
-2023-06-13 14:22:49,234 INFO PID 29659 Receive response from modbus server: 3
-2023-06-13 14:22:57,245 INFO PID 29659 Receive response from modbus server: 3
-2023-06-13 14:23:05,253 INFO PID 29659 Receive response from modbus server: 2
-2023-06-13 14:23:13,262 INFO PID 29659 Receive response from modbus server: 5
-2023-06-13 14:23:21,271 INFO PID 29659 Receive response from modbus server: 2
-2023-06-13 14:23:29,283 INFO PID 29659 Receive response from modbus server: 3
-2023-06-13 14:23:37,292 INFO PID 29659 Receive response from modbus server: 1
-2023-06-13 14:23:45,301 INFO PID 29659 Receive response from modbus server: 3
-2023-06-13 14:23:53,310 INFO PID 29659 Receive response from modbus server: 4
-2023-06-13 14:24:01,319 INFO PID 29659 Receive response from modbus server: 4
-2023-06-13 14:24:09,327 INFO PID 29659 Receive response from modbus server: 4
-2023-06-13 14:24:17,336 INFO PID 29659 Receive response from modbus server: 2
-2023-06-13 14:24:25,345 INFO PID 29659 Receive response from modbus server: 5
-2023-06-13 14:24:33,354 INFO PID 29659 Receive response from modbus server: 2
-2023-06-13 14:24:41,363 INFO PID 29659 Receive response from modbus server: 4
-2023-06-13 14:24:49,374 INFO PID 29659 Receive response from modbus server: 5
-2023-06-13 14:24:57,383 INFO PID 29659 Receive response from modbus server: 4
-2023-06-13 14:25:05,397 INFO PID 29659 Receive response from modbus server: 1
-2023-06-13 14:25:13,407 INFO PID 29659 Receive response from modbus server: 4
-2023-06-13 14:25:21,416 INFO PID 29659 Receive response from modbus server: 2
-2023-06-13 14:25:29,426 INFO PID 29659 Receive response from modbus server: 4
-2023-06-13 14:25:37,439 INFO PID 29659 Receive response from modbus server: 1
-2023-06-13 14:25:45,457 INFO PID 29659 Receive response from modbus server: 4
-2023-06-13 14:25:53,466 INFO PID 29659 Receive response from modbus server: 4
-2023-06-13 14:26:01,483 INFO PID 29659 Receive response from modbus server: 4
-2023-06-13 14:26:09,493 INFO PID 29659 Receive response from modbus server: 4
-2023-06-13 14:26:17,503 INFO PID 29659 Receive response from modbus server: 4
-2023-06-13 14:26:25,512 INFO PID 29659 Receive response from modbus server: 3
-2023-06-13 14:26:33,521 INFO PID 29659 Receive response from modbus server: 5
-2023-06-13 14:26:41,533 INFO PID 29659 Receive response from modbus server: 3
-2023-06-13 14:26:49,542 INFO PID 29659 Receive response from modbus server: 5
-2023-06-13 14:26:57,551 INFO PID 29659 Receive response from modbus server: 3
-2023-06-13 14:27:05,559 INFO PID 29659 Receive response from modbus server: 3
-2023-06-13 14:27:13,569 INFO PID 29659 Receive response from modbus server: 3
-2023-06-13 14:27:21,583 INFO PID 29659 Receive response from modbus server: 2
-2023-06-13 14:27:29,594 INFO PID 29659 Receive response from modbus server: 3
-2023-06-13 14:27:37,604 INFO PID 29659 Receive response from modbus server: 3
-2023-06-13 14:27:45,614 INFO PID 29659 Receive response from modbus server: 5
-2023-06-13 14:27:53,625 INFO PID 29659 Receive response from modbus server: 5
-2023-06-13 14:28:01,640 INFO PID 29659 Receive response from modbus server: 1
-2023-06-13 14:28:09,647 INFO PID 29659 Receive response from modbus server: 2
-2023-06-13 14:28:17,655 INFO PID 29659 Receive response from modbus server: 5
-2023-06-13 14:28:25,667 INFO PID 29659 Receive response from modbus server: 2
-2023-06-13 14:28:33,676 INFO PID 29659 Receive response from modbus server: 3
-2023-06-13 14:28:41,683 INFO PID 29659 Receive response from modbus server: 2
-2023-06-13 14:28:49,693 INFO PID 29659 Receive response from modbus server: 3
-2023-06-13 14:28:57,703 INFO PID 29659 Receive response from modbus server: 2
-2023-06-13 14:29:05,712 INFO PID 29659 Receive response from modbus server: 5
-2023-06-13 14:29:13,720 INFO PID 29659 Receive response from modbus server: 2
-2023-06-13 14:29:21,729 INFO PID 29659 Receive response from modbus server: 5
-2023-06-13 14:29:29,737 INFO PID 29659 Receive response from modbus server: 2
-2023-06-13 14:29:37,748 INFO PID 29659 Receive response from modbus server: 5
-2023-06-13 14:29:45,758 INFO PID 29659 Receive response from modbus server: 3
-2023-06-13 14:29:53,770 INFO PID 29659 Receive response from modbus server: 3
-2023-06-13 14:30:01,781 INFO PID 29659 Receive response from modbus server: 2
-2023-06-13 14:30:09,791 INFO PID 29659 Receive response from modbus server: 5
-2023-06-13 14:30:17,804 INFO PID 29659 Receive response from modbus server: 3
-2023-06-13 14:30:25,813 INFO PID 29659 Receive response from modbus server: 4
-2023-06-13 14:30:33,822 INFO PID 29659 Receive response from modbus server: 3
-2023-06-13 14:30:41,831 INFO PID 29659 Receive response from modbus server: 3
-2023-06-13 14:30:49,842 INFO PID 29659 Receive response from modbus server: 5
-2023-06-13 14:30:57,850 INFO PID 29659 Receive response from modbus server: 4
-2023-06-13 14:31:05,862 INFO PID 29659 Receive response from modbus server: 2
-2023-06-13 14:31:13,874 INFO PID 29659 Receive response from modbus server: 3
-2023-06-13 14:31:21,883 INFO PID 29659 Receive response from modbus server: 4
-2023-06-13 14:31:29,894 INFO PID 29659 Receive response from modbus server: 5
-2023-06-13 14:31:37,905 INFO PID 29659 Receive response from modbus server: 4
-2023-06-13 14:31:45,913 INFO PID 29659 Receive response from modbus server: 5
-2023-06-13 14:31:53,924 INFO PID 29659 Receive response from modbus server: 1
-2023-06-13 14:32:01,933 INFO PID 29659 Receive response from modbus server: 4
-2023-06-13 14:32:09,945 INFO PID 29659 Receive response from modbus server: 5
-2023-06-13 14:32:17,956 INFO PID 29659 Receive response from modbus server: 3
-2023-06-13 14:32:25,967 INFO PID 29659 Receive response from modbus server: 3
-2023-06-13 14:32:33,976 INFO PID 29659 Receive response from modbus server: 4
-2023-06-13 14:32:41,986 INFO PID 29659 Receive response from modbus server: 2
-2023-06-13 14:32:49,995 INFO PID 29659 Receive response from modbus server: 2
-2023-06-13 14:32:58,007 INFO PID 29659 Receive response from modbus server: 1
-2023-06-13 14:33:06,016 INFO PID 29659 Receive response from modbus server: 4
-2023-06-13 14:33:14,029 INFO PID 29659 Receive response from modbus server: 3
-2023-06-13 14:33:22,041 INFO PID 29659 Receive response from modbus server: 3
-2023-06-13 14:33:30,052 INFO PID 29659 Receive response from modbus server: 1
-2023-06-13 14:33:38,064 INFO PID 29659 Receive response from modbus server: 2
-2023-06-13 14:33:46,073 INFO PID 29659 Receive response from modbus server: 1
-2023-06-13 14:33:54,083 INFO PID 29659 Receive response from modbus server: 5
-2023-06-13 14:34:02,095 INFO PID 29659 Receive response from modbus server: 1
-2023-06-13 14:34:10,107 INFO PID 29659 Receive response from modbus server: 2
-2023-06-13 14:34:18,122 INFO PID 29659 Receive response from modbus server: 5
-2023-06-13 14:36:14,858 INFO PID 34708 Start player
-2023-06-13 14:36:14,868 INFO PID 34708 Receive response from modbus server: 1
-2023-06-13 14:36:22,878 INFO PID 34708 Receive response from modbus server: 3
-2023-06-13 14:38:07,585 INFO PID 34965 Start player
-2023-06-13 14:38:07,587 INFO PID 34965 Playing video file 4.mp4
-2023-06-13 14:38:07,598 INFO PID 34965 Receive response from modbus server: 4
-2023-06-13 14:38:15,598 INFO PID 34965 Playing video file 3.mp4
-2023-06-13 14:38:15,648 INFO PID 34965 Receive response from modbus server: 3
-2023-06-13 14:38:23,648 INFO PID 34965 Playing video file 4.mp4
-2023-06-13 14:38:23,659 INFO PID 34965 Receive response from modbus server: 4
-2023-06-13 14:38:31,660 INFO PID 34965 Playing video file 3.mp4
-2023-06-13 14:38:31,668 INFO PID 34965 Receive response from modbus server: 3
-2023-06-13 14:38:39,668 INFO PID 34965 Playing video file 5.mp4
-2023-06-13 14:38:39,677 INFO PID 34965 Receive response from modbus server: 5
-2023-06-13 14:38:47,678 INFO PID 34965 Playing video file 3.mp4
-2023-06-13 14:38:47,687 INFO PID 34965 Receive response from modbus server: 3
-2023-06-13 14:38:55,687 INFO PID 34965 Playing video file 5.mp4
-2023-06-13 14:38:55,698 INFO PID 34965 Receive response from modbus server: 5
-2023-06-13 14:39:03,699 INFO PID 34965 Playing video file 2.mp4
-2023-06-13 14:39:03,710 INFO PID 34965 Receive response from modbus server: 2
-2023-06-13 14:39:11,711 INFO PID 34965 Playing video file 3.mp4
-2023-06-13 14:39:11,721 INFO PID 34965 Receive response from modbus server: 3
-2023-06-13 14:39:19,722 INFO PID 34965 Playing video file 2.mp4
-2023-06-13 14:39:19,730 INFO PID 34965 Receive response from modbus server: 2
-2023-06-13 14:39:27,731 INFO PID 34965 Playing video file 5.mp4
-2023-06-13 14:39:27,740 INFO PID 34965 Receive response from modbus server: 5
-2023-06-13 14:39:35,742 INFO PID 34965 Playing video file 1.mp4
-2023-06-13 14:39:35,752 INFO PID 34965 Receive response from modbus server: 1
-2023-06-13 14:39:43,752 INFO PID 34965 Playing video file 4.mp4
-2023-06-13 14:39:43,765 INFO PID 34965 Receive response from modbus server: 4
-2023-06-13 14:39:51,765 INFO PID 34965 Playing video file 3.mp4
-2023-06-13 14:39:51,773 INFO PID 34965 Receive response from modbus server: 3
-2023-06-13 14:39:59,773 INFO PID 34965 Playing video file 3.mp4
-2023-06-13 14:39:59,783 INFO PID 34965 Receive response from modbus server: 3
-2023-06-13 14:40:07,784 INFO PID 34965 Playing video file 3.mp4
-2023-06-13 14:40:07,791 INFO PID 34965 Receive response from modbus server: 3
-2023-06-13 14:40:15,792 INFO PID 34965 Playing video file 5.mp4
-2023-06-13 14:40:15,799 INFO PID 34965 Receive response from modbus server: 5
-2023-06-13 14:40:23,800 INFO PID 34965 Playing video file 2.mp4
-2023-06-13 14:40:23,810 INFO PID 34965 Receive response from modbus server: 2
-2023-06-13 14:40:31,811 INFO PID 34965 Playing video file 4.mp4
-2023-06-13 14:40:31,820 INFO PID 34965 Receive response from modbus server: 4
-2023-06-13 14:40:39,821 INFO PID 34965 Playing video file 4.mp4
-2023-06-13 14:40:39,828 INFO PID 34965 Receive response from modbus server: 4
-2023-06-13 14:40:47,829 INFO PID 34965 Playing video file 4.mp4
-2023-06-13 14:40:47,837 INFO PID 34965 Receive response from modbus server: 4
-2023-06-13 14:40:55,837 INFO PID 34965 Playing video file 2.mp4
-2023-06-13 14:40:55,845 INFO PID 34965 Receive response from modbus server: 2
-2023-06-13 14:41:03,846 INFO PID 34965 Playing video file 5.mp4
-2023-06-13 14:41:03,860 INFO PID 34965 Receive response from modbus server: 5
-2023-06-13 14:41:11,861 INFO PID 34965 Playing video file 4.mp4
-2023-06-13 14:41:11,870 INFO PID 34965 Receive response from modbus server: 4
-2023-06-13 14:41:19,871 INFO PID 34965 Playing video file 2.mp4
-2023-06-13 14:41:19,884 INFO PID 34965 Receive response from modbus server: 2
-2023-06-13 14:41:27,885 INFO PID 34965 Playing video file 1.mp4
-2023-06-13 14:41:27,893 INFO PID 34965 Receive response from modbus server: 1
-2023-06-13 14:41:35,894 INFO PID 34965 Playing video file 1.mp4
-2023-06-13 14:41:35,905 INFO PID 34965 Receive response from modbus server: 1
-2023-06-13 14:41:43,906 INFO PID 34965 Playing video file 3.mp4
-2023-06-13 14:41:43,918 INFO PID 34965 Receive response from modbus server: 3
-2023-06-13 14:41:51,919 INFO PID 34965 Playing video file 3.mp4
-2023-06-13 14:41:51,928 INFO PID 34965 Receive response from modbus server: 3
-2023-06-13 14:41:59,929 INFO PID 34965 Playing video file 1.mp4
-2023-06-13 14:41:59,938 INFO PID 34965 Receive response from modbus server: 1
-2023-06-13 14:42:07,939 INFO PID 34965 Playing video file 5.mp4
-2023-06-13 14:42:07,950 INFO PID 34965 Receive response from modbus server: 5
-2023-06-13 14:42:15,950 INFO PID 34965 Playing video file 4.mp4
-2023-06-13 14:42:15,958 INFO PID 34965 Receive response from modbus server: 4
-2023-06-13 14:42:23,958 INFO PID 34965 Playing video file 5.mp4
-2023-06-13 14:42:23,969 INFO PID 34965 Receive response from modbus server: 5
-2023-06-13 14:42:31,969 INFO PID 34965 Playing video file 5.mp4
-2023-06-13 14:42:31,979 INFO PID 34965 Receive response from modbus server: 5
-2023-06-13 14:42:39,980 INFO PID 34965 Playing video file 1.mp4
-2023-06-13 14:42:39,990 INFO PID 34965 Receive response from modbus server: 1
-2023-06-13 14:42:47,990 INFO PID 34965 Playing video file 3.mp4
-2023-06-13 14:42:48,002 INFO PID 34965 Receive response from modbus server: 3
-2023-06-13 14:42:56,003 INFO PID 34965 Playing video file 2.mp4
-2023-06-13 14:42:56,044 INFO PID 34965 Receive response from modbus server: 2
-2023-06-13 14:43:04,044 INFO PID 34965 Playing video file 5.mp4
-2023-06-13 14:43:04,057 INFO PID 34965 Receive response from modbus server: 5
-2023-06-13 14:43:12,057 INFO PID 34965 Playing video file 5.mp4
-2023-06-13 14:43:12,070 INFO PID 34965 Receive response from modbus server: 5
-2023-06-13 14:43:20,070 INFO PID 34965 Playing video file 3.mp4
-2023-06-13 14:43:20,080 INFO PID 34965 Receive response from modbus server: 3
-2023-06-13 14:43:28,081 INFO PID 34965 Playing video file 3.mp4
-2023-06-13 14:43:28,097 INFO PID 34965 Receive response from modbus server: 3
+2023-06-18 20:45:29,098 INFO PID 13361 Playing video file 4.mp4
+2023-06-18 20:45:29,200 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 20:45:29,256 INFO PID 13361 Playing video file 4.mp4
+2023-06-18 20:45:29,453 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 20:45:30,417 INFO PID 13361 Playing video file 4.mp4
+2023-06-18 20:45:30,486 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 20:45:30,542 INFO PID 13361 Playing video file 5.mp4
+2023-06-18 20:45:30,750 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 20:45:32,119 INFO PID 13361 Playing video file 5.mp4
+2023-06-18 20:45:32,216 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 20:45:33,183 INFO PID 13361 Playing video file 4.mp4
+2023-06-18 20:45:33,263 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 20:45:34,376 INFO PID 13361 Playing video file 3.mp4
+2023-06-18 20:45:34,454 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 20:45:36,532 INFO PID 13361 Playing video file 5.mp4
+2023-06-18 20:45:36,606 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 20:45:37,676 INFO PID 13361 Playing video file 1.mp4
+2023-06-18 20:45:37,764 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 20:45:38,677 INFO PID 13361 Playing video file 2.mp4
+2023-06-18 20:45:38,770 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 20:45:39,687 INFO PID 13361 Playing video file 5.mp4
+2023-06-18 20:45:39,774 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 20:45:40,537 INFO PID 13361 Playing video file 1.mp4
+2023-06-18 20:45:40,616 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 20:45:41,381 INFO PID 13361 Playing video file 1.mp4
+2023-06-18 20:45:41,457 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 20:47:06,390 INFO PID 13361 Playing video file 3.mp4
+2023-06-18 20:47:06,458 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 20:47:06,513 INFO PID 13361 Playing video file 4.mp4
+2023-06-18 20:47:06,735 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 20:47:07,955 INFO PID 13361 Playing video file 5.mp4
+2023-06-18 20:47:08,080 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 20:48:11,513 INFO PID 13361 Playing video file 2.mp4
+2023-06-18 20:48:11,764 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 20:48:15,383 INFO PID 13361 Playing video file 3.mp4
+2023-06-18 20:48:15,472 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 20:48:15,527 INFO PID 13361 Playing video file 1.mp4
+2023-06-18 20:48:15,723 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 20:48:16,791 INFO PID 13361 Playing video file 1.mp4
+2023-06-18 20:48:16,914 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 20:48:17,791 INFO PID 13361 Playing video file 2.mp4
+2023-06-18 20:48:17,873 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 20:48:19,046 INFO PID 13361 Playing video file 2.mp4
+2023-06-18 20:48:19,131 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 20:48:19,192 INFO PID 13361 Playing video file 1.mp4
+2023-06-18 20:48:19,370 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 20:48:21,604 INFO PID 13361 Playing video file 2.mp4
+2023-06-18 20:48:21,725 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 20:48:21,782 INFO PID 13361 Playing video file 3.mp4
+2023-06-18 20:48:21,993 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 20:48:22,960 INFO PID 13361 Playing video file 2.mp4
+2023-06-18 20:48:23,034 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 20:48:23,088 INFO PID 13361 Playing video file 1.mp4
+2023-06-18 20:48:23,273 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 20:52:12,732 INFO PID 13361 Playing video file 3.mp4
+2023-06-18 20:52:12,838 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 20:52:12,893 INFO PID 13361 Playing video file 1.mp4
+2023-06-18 20:52:13,256 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 20:52:14,371 INFO PID 13361 Playing video file 4.mp4
+2023-06-18 20:52:14,477 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 20:52:17,974 INFO PID 13361 Playing video file 4.mp4
+2023-06-18 20:52:18,078 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 20:52:19,091 INFO PID 13361 Playing video file 5.mp4
+2023-06-18 20:52:19,166 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 20:52:19,222 INFO PID 13361 Playing video file 1.mp4
+2023-06-18 20:52:19,433 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:08:34,139 INFO PID 13361 Playing video file 3.mp4
+2023-06-18 21:08:34,215 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:08:34,278 INFO PID 13361 Playing video file 2.mp4
+2023-06-18 21:08:34,483 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:08:37,125 INFO PID 13361 Playing video file 4.mp4
+2023-06-18 21:08:37,248 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:08:37,305 INFO PID 13361 Playing video file 5.mp4
+2023-06-18 21:08:37,526 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:08:39,567 INFO PID 13361 Playing video file 3.mp4
+2023-06-18 21:08:39,685 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:08:39,742 INFO PID 13361 Playing video file 2.mp4
+2023-06-18 21:08:39,945 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:08:40,856 INFO PID 13361 Playing video file 5.mp4
+2023-06-18 21:08:40,932 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:08:40,986 INFO PID 13361 Playing video file 5.mp4
+2023-06-18 21:08:41,190 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:08:42,266 INFO PID 13361 Playing video file 5.mp4
+2023-06-18 21:08:42,413 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:08:43,303 INFO PID 13361 Playing video file 4.mp4
+2023-06-18 21:08:43,403 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:08:44,423 INFO PID 13361 Playing video file 1.mp4
+2023-06-18 21:08:44,498 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:08:45,615 INFO PID 13361 Playing video file 5.mp4
+2023-06-18 21:08:45,728 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:08:46,944 INFO PID 13361 Playing video file 4.mp4
+2023-06-18 21:08:47,020 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:08:48,800 INFO PID 13361 Playing video file 1.mp4
+2023-06-18 21:08:48,877 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:08:50,704 INFO PID 13361 Playing video file 2.mp4
+2023-06-18 21:08:50,785 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:08:51,862 INFO PID 13361 Playing video file 2.mp4
+2023-06-18 21:08:51,928 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:08:51,982 INFO PID 13361 Playing video file 5.mp4
+2023-06-18 21:08:52,145 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:09:24,022 INFO PID 13361 Playing video file 3.mp4
+2023-06-18 21:09:24,111 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:09:25,334 INFO PID 13361 Playing video file 2.mp4
+2023-06-18 21:09:25,440 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:09:26,408 INFO PID 13361 Playing video file 5.mp4
+2023-06-18 21:09:26,518 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:09:27,385 INFO PID 13361 Playing video file 4.mp4
+2023-06-18 21:09:27,459 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:09:29,183 INFO PID 13361 Playing video file 1.mp4
+2023-06-18 21:09:29,270 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:09:30,339 INFO PID 13361 Playing video file 2.mp4
+2023-06-18 21:09:30,453 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:09:31,217 INFO PID 13361 Playing video file 5.mp4
+2023-06-18 21:09:31,280 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:09:31,994 INFO PID 13361 Playing video file 5.mp4
+2023-06-18 21:09:32,079 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:09:32,793 INFO PID 13361 Playing video file 4.mp4
+2023-06-18 21:09:32,867 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:09:33,786 INFO PID 13361 Playing video file 5.mp4
+2023-06-18 21:09:33,874 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:09:34,645 INFO PID 13361 Playing video file 1.mp4
+2023-06-18 21:09:34,717 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:09:35,700 INFO PID 13361 Playing video file 3.mp4
+2023-06-18 21:09:35,777 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:34:34,170 INFO PID 13361 Playing video file 1.mp4
+2023-06-18 21:34:34,254 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:48:16,705 INFO PID 13361 Playing video file 3.mp4
+2023-06-18 21:48:16,796 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:48:17,915 INFO PID 13361 Playing video file 5.mp4
+2023-06-18 21:48:18,044 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:48:18,858 INFO PID 13361 Playing video file 1.mp4
+2023-06-18 21:48:19,001 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:49:24,452 INFO PID 13361 Playing video file 1.mp4
+2023-06-18 21:49:24,554 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:49:26,592 INFO PID 13361 Playing video file 4.mp4
+2023-06-18 21:49:26,717 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:49:28,850 INFO PID 13361 Playing video file 2.mp4
+2023-06-18 21:49:28,935 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:49:31,067 INFO PID 13361 Playing video file 4.mp4
+2023-06-18 21:49:31,183 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:49:32,099 INFO PID 13361 Playing video file 1.mp4
+2023-06-18 21:49:32,197 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:49:33,972 INFO PID 13361 Playing video file 3.mp4
+2023-06-18 21:49:34,062 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:49:35,836 INFO PID 13361 Playing video file 4.mp4
+2023-06-18 21:49:35,936 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:49:37,113 INFO PID 13361 Playing video file 4.mp4
+2023-06-18 21:49:37,265 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:49:38,080 INFO PID 13361 Playing video file 4.mp4
+2023-06-18 21:49:38,161 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:49:38,780 INFO PID 13361 Playing video file 2.mp4
+2023-06-18 21:49:38,856 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:49:39,772 INFO PID 13361 Playing video file 4.mp4
+2023-06-18 21:49:39,844 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:49:40,708 INFO PID 13361 Playing video file 1.mp4
+2023-06-18 21:49:40,785 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:49:41,807 INFO PID 13361 Playing video file 1.mp4
+2023-06-18 21:49:41,889 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:49:41,944 INFO PID 13361 Playing video file 5.mp4
+2023-06-18 21:49:42,173 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:49:42,989 INFO PID 13361 Playing video file 3.mp4
+2023-06-18 21:49:43,139 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:49:43,197 INFO PID 13361 Playing video file 3.mp4
+2023-06-18 21:49:43,305 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:49:44,575 INFO PID 13361 Playing video file 4.mp4
+2023-06-18 21:49:44,643 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:49:44,699 INFO PID 13361 Playing video file 1.mp4
+2023-06-18 21:49:44,894 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:49:45,606 INFO PID 13361 Playing video file 1.mp4
+2023-06-18 21:49:45,676 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:49:46,392 INFO PID 13361 Playing video file 3.mp4
+2023-06-18 21:49:46,466 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:49:47,231 INFO PID 13361 Playing video file 2.mp4
+2023-06-18 21:49:47,304 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:49:47,970 INFO PID 13361 Playing video file 1.mp4
+2023-06-18 21:49:48,036 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:50:17,812 INFO PID 13361 Playing video file 4.mp4
+2023-06-18 21:50:17,915 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:50:18,980 INFO PID 13361 Playing video file 2.mp4
+2023-06-18 21:50:19,058 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:50:20,025 INFO PID 13361 Playing video file 4.mp4
+2023-06-18 21:50:20,098 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:50:21,067 INFO PID 13361 Playing video file 4.mp4
+2023-06-18 21:50:21,149 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:50:21,963 INFO PID 13361 Playing video file 1.mp4
+2023-06-18 21:50:22,039 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:50:22,857 INFO PID 13361 Playing video file 2.mp4
+2023-06-18 21:50:22,932 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:50:23,697 INFO PID 13361 Playing video file 2.mp4
+2023-06-18 21:50:23,769 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:50:24,481 INFO PID 13361 Playing video file 1.mp4
+2023-06-18 21:50:24,543 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:50:25,964 INFO PID 13361 Playing video file 3.mp4
+2023-06-18 21:50:26,062 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:50:26,926 INFO PID 13361 Playing video file 4.mp4
+2023-06-18 21:50:26,994 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:50:27,756 INFO PID 13361 Playing video file 4.mp4
+2023-06-18 21:50:27,842 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:50:28,561 INFO PID 13361 Playing video file 4.mp4
+2023-06-18 21:50:28,712 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:50:29,335 INFO PID 13361 Playing video file 3.mp4
+2023-06-18 21:50:29,449 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:50:30,312 INFO PID 13361 Playing video file 2.mp4
+2023-06-18 21:50:30,389 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:50:31,151 INFO PID 13361 Playing video file 2.mp4
+2023-06-18 21:50:31,219 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:50:31,931 INFO PID 13361 Playing video file 4.mp4
+2023-06-18 21:50:31,994 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:50:32,757 INFO PID 13361 Playing video file 1.mp4
+2023-06-18 21:50:32,844 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:50:42,626 INFO PID 13361 Playing video file 3.mp4
+2023-06-18 21:50:42,719 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:50:45,404 INFO PID 13361 Playing video file 1.mp4
+2023-06-18 21:50:45,511 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:50:45,564 INFO PID 13361 Playing video file 3.mp4
+2023-06-18 21:50:45,638 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:50:46,298 INFO PID 13361 Playing video file 5.mp4
+2023-06-18 21:50:46,376 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:50:47,445 INFO PID 13361 Playing video file 2.mp4
+2023-06-18 21:50:47,513 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:50:48,227 INFO PID 13361 Playing video file 5.mp4
+2023-06-18 21:50:48,294 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:50:48,348 INFO PID 13361 Playing video file 2.mp4
+2023-06-18 21:50:48,550 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:50:49,425 INFO PID 13361 Playing video file 1.mp4
+2023-06-18 21:50:49,507 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:50:50,371 INFO PID 13361 Playing video file 4.mp4
+2023-06-18 21:50:50,449 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:50:51,217 INFO PID 13361 Playing video file 5.mp4
+2023-06-18 21:50:51,303 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:50:52,017 INFO PID 13361 Playing video file 1.mp4
+2023-06-18 21:50:52,085 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:54:39,409 INFO PID 13361 Playing video file 3.mp4
+2023-06-18 21:54:39,489 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:54:40,503 INFO PID 13361 Playing video file 1.mp4
+2023-06-18 21:54:40,581 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:54:42,968 INFO PID 13361 Playing video file 2.mp4
+2023-06-18 21:54:43,060 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:54:44,833 INFO PID 13361 Playing video file 3.mp4
+2023-06-18 21:54:44,914 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:54:46,689 INFO PID 13361 Playing video file 3.mp4
+2023-06-18 21:54:46,770 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 21:54:47,734 INFO PID 13361 Playing video file 5.mp4
+2023-06-18 21:54:47,815 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 22:00:08,388 INFO PID 13361 Playing video file 3.mp4
+2023-06-18 22:00:08,471 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 22:00:10,146 INFO PID 13361 Playing video file 5.mp4
+2023-06-18 22:00:10,228 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 22:00:10,283 INFO PID 13361 Playing video file 1.mp4
+2023-06-18 22:00:10,499 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 22:00:10,552 INFO PID 13361 Playing video file 3.mp4
+2023-06-18 22:00:10,605 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 22:00:11,517 INFO PID 13361 Playing video file 1.mp4
+2023-06-18 22:00:11,582 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 22:00:11,637 INFO PID 13361 Playing video file 2.mp4
+2023-06-18 22:00:11,843 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 22:00:12,653 INFO PID 13361 Playing video file 1.mp4
+2023-06-18 22:00:12,724 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 22:00:12,780 INFO PID 13361 Playing video file 2.mp4
+2023-06-18 22:00:12,987 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 22:00:13,904 INFO PID 13361 Playing video file 4.mp4
+2023-06-18 22:00:13,977 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 22:00:14,032 INFO PID 13361 Playing video file 5.mp4
+2023-06-18 22:00:14,238 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 22:00:15,053 INFO PID 13361 Playing video file 3.mp4
+2023-06-18 22:00:15,120 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 22:00:15,936 INFO PID 13361 Playing video file 4.mp4
+2023-06-18 22:00:16,071 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 22:00:16,890 INFO PID 13361 Playing video file 3.mp4
+2023-06-18 22:00:16,975 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 22:00:17,739 INFO PID 13361 Playing video file 4.mp4
+2023-06-18 22:00:17,868 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 22:00:18,578 INFO PID 13361 Playing video file 4.mp4
+2023-06-18 22:00:18,653 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 22:00:19,416 INFO PID 13361 Playing video file 4.mp4
+2023-06-18 22:00:19,509 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 22:00:20,222 INFO PID 13361 Playing video file 2.mp4
+2023-06-18 22:00:20,294 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 22:00:20,349 INFO PID 13361 Playing video file 1.mp4
+2023-06-18 22:00:20,536 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 22:00:21,256 INFO PID 13361 Playing video file 3.mp4
+2023-06-18 22:00:21,325 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 22:00:22,050 INFO PID 13361 Playing video file 3.mp4
+2023-06-18 22:00:22,113 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 22:00:22,168 INFO PID 13361 Playing video file 4.mp4
+2023-06-18 22:00:22,234 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 22:08:51,229 INFO PID 13361 Playing video file 1.mp4
+2023-06-18 22:08:51,356 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 22:29:54,348 INFO PID 13361 Playing video file 1.mp4
+2023-06-18 22:29:54,427 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 22:30:01,623 INFO PID 13361 Playing video file 2.mp4
+2023-06-18 22:30:01,713 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 22:30:11,791 INFO PID 13361 Playing video file 3.mp4
+2023-06-18 22:30:11,868 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 22:30:13,092 INFO PID 13361 Playing video file 2.mp4
+2023-06-18 22:30:13,196 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 22:30:15,590 INFO PID 13361 Playing video file 3.mp4
+2023-06-18 22:30:15,705 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 22:30:16,469 INFO PID 13361 Playing video file 3.mp4
+2023-06-18 22:30:16,585 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 22:30:17,463 INFO PID 13361 Playing video file 4.mp4
+2023-06-18 22:30:17,602 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 22:30:18,216 INFO PID 13361 Playing video file 5.mp4
+2023-06-18 22:30:18,351 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 23:09:07,225 INFO PID 13361 Playing video file 3.mp4
+2023-06-18 23:09:07,259 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 23:09:07,311 INFO PID 13361 Playing video file 4.mp4
+2023-06-18 23:09:07,428 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 23:09:11,978 INFO PID 13361 Playing video file 3.mp4
+2023-06-18 23:09:12,017 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 23:09:12,070 INFO PID 13361 Playing video file 2.mp4
+2023-06-18 23:09:12,209 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 23:10:41,906 INFO PID 13361 Playing video file 4.mp4
+2023-06-18 23:10:41,976 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 23:10:42,031 INFO PID 13361 Playing video file 5.mp4
+2023-06-18 23:10:42,228 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 23:10:45,776 INFO PID 13361 Playing video file 4.mp4
+2023-06-18 23:10:45,873 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 23:10:45,927 INFO PID 13361 Playing video file 3.mp4
+2023-06-18 23:10:46,155 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 23:10:47,729 INFO PID 13361 Playing video file 3.mp4
+2023-06-18 23:10:47,879 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 23:10:49,015 INFO PID 13361 Playing video file 3.mp4
+2023-06-18 23:10:49,087 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 23:10:49,143 INFO PID 13361 Playing video file 2.mp4
+2023-06-18 23:10:49,307 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 23:10:50,425 INFO PID 13361 Playing video file 3.mp4
+2023-06-18 23:10:50,501 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 23:10:50,556 INFO PID 13361 Playing video file 5.mp4
+2023-06-18 23:10:50,723 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 23:10:51,739 INFO PID 13361 Playing video file 3.mp4
+2023-06-18 23:10:51,813 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 23:10:52,626 INFO PID 13361 Playing video file 2.mp4
+2023-06-18 23:10:52,660 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 23:10:52,712 INFO PID 13361 Playing video file 2.mp4
+2023-06-18 23:10:52,841 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 23:11:08,872 INFO PID 13361 Playing video file 1.mp4
+2023-06-18 23:11:09,038 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 23:11:09,096 INFO PID 13361 Playing video file 1.mp4
+2023-06-18 23:11:09,307 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 23:11:12,101 INFO PID 13361 Playing video file 2.mp4
+2023-06-18 23:11:12,193 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 23:11:12,251 INFO PID 13361 Playing video file 3.mp4
+2023-06-18 23:11:12,442 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 23:11:14,266 INFO PID 13361 Playing video file 3.mp4
+2023-06-18 23:11:14,299 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 23:11:14,351 INFO PID 13361 Playing video file 5.mp4
+2023-06-18 23:11:14,432 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 23:11:14,486 INFO PID 13361 Playing video file 4.mp4
+2023-06-18 23:11:14,566 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 23:11:15,582 INFO PID 13361 Playing video file 5.mp4
+2023-06-18 23:11:15,612 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 23:11:15,665 INFO PID 13361 Playing video file 2.mp4
+2023-06-18 23:11:15,812 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 23:11:16,977 INFO PID 13361 Playing video file 4.mp4
+2023-06-18 23:11:17,019 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 23:11:17,074 INFO PID 13361 Playing video file 3.mp4
+2023-06-18 23:11:17,270 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 23:11:18,188 INFO PID 13361 Playing video file 1.mp4
+2023-06-18 23:11:18,263 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 23:11:19,280 INFO PID 13361 Playing video file 5.mp4
+2023-06-18 23:11:19,319 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 23:11:19,373 INFO PID 13361 Playing video file 2.mp4
+2023-06-18 23:11:19,528 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 23:11:20,391 INFO PID 13361 Playing video file 1.mp4
+2023-06-18 23:11:20,462 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 23:11:20,518 INFO PID 13361 Playing video file 2.mp4
+2023-06-18 23:11:20,586 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 23:11:21,651 INFO PID 13361 Playing video file 1.mp4
+2023-06-18 23:11:21,718 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 23:11:21,773 INFO PID 13361 Playing video file 5.mp4
+2023-06-18 23:11:21,940 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 23:11:28,671 INFO PID 13361 Playing video file 2.mp4
+2023-06-18 23:11:28,746 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 23:18:40,983 INFO PID 13361 Playing video file 2.mp4
+2023-06-18 23:18:41,038 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 23:18:41,089 INFO PID 13361 Playing video file 5.mp4
+2023-06-18 23:18:41,199 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 23:24:31,870 INFO PID 13361 Playing video file 4.mp4
+2023-06-18 23:24:31,954 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 23:24:33,484 INFO PID 13361 Playing video file 5.mp4
+2023-06-18 23:24:33,593 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 23:24:34,308 INFO PID 13361 Playing video file 2.mp4
+2023-06-18 23:24:34,441 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 23:25:54,980 INFO PID 13361 Playing video file 1.mp4
+2023-06-18 23:25:55,067 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 23:34:04,247 INFO PID 13361 Playing video file 2.mp4
+2023-06-18 23:34:04,329 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 23:34:04,384 INFO PID 13361 Playing video file 4.mp4
+2023-06-18 23:34:04,504 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 23:41:07,871 INFO PID 13361 Playing video file 2.mp4
+2023-06-18 23:41:07,955 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 23:43:21,950 INFO PID 13361 Playing video file 2.mp4
+2023-06-18 23:43:22,037 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 23:43:25,784 INFO PID 13361 Playing video file 5.mp4
+2023-06-18 23:43:25,860 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 23:43:25,916 INFO PID 13361 Playing video file 4.mp4
+2023-06-18 23:43:26,140 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused
+2023-06-18 23:58:41,537 INFO PID 13361 Playing video file 2.mp4
+2023-06-18 23:58:41,615 ERROR PID 13361 Exception occurred
+Traceback (most recent call last):
+  File "/home/ichiro/factory-mockup/mockup.py", line 58, in send_data
+    sock.connect((MODBUS_IP, MODBUS_PORT))
+ConnectionRefusedError: [Errno 111] Connection refused

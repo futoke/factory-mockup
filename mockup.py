@@ -9,6 +9,9 @@ from logging.handlers import RotatingFileHandler
 from umodbus import conf
 from umodbus.client import tcp
 
+from gpiozero import Button
+
+
 MODBUS_IP = 'localhost'
 MODBUS_PORT = 5020
 
@@ -28,18 +31,23 @@ logging.basicConfig(
 # Настройка modbus.
 conf.SIGNED_VALUES = True
 
+# Настройка кнопок.
+button = Button(26)
+
 
 def start_player():
     logging.info('Start player')
     try:
         subprocess.Popen([
+            'nohup',
             'mpv',
+            '--hwdec=v4l2m2m',
             '--playlist=video/all.pls',
             '--fullscreen',
             '--script-opts=osc-showfullscreen=no',
             '--loop-playlist=inf',
             '--input-ipc-server=/tmp/mpvsocket'
-        ])
+        ], close_fds=False)
     except Exception as ex:
         logging.error('Exception occurred', exc_info=True)
 
@@ -85,12 +93,12 @@ def main():
     start_player()
 
     while True:
-        rnd_num = random.randint(1, 5)
-        
-        play_video(f'{rnd_num}.mp4')
-        send_data(rnd_num)
-
-        time.sleep(8)
+        if button.is_pressed:
+            rnd_num = random.randint(1, 5)
+            
+            play_video(f'{rnd_num}.mp4')
+            send_data(rnd_num)
+        time.sleep(0.05)
 
 
 if __name__ == '__main__':
