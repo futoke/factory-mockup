@@ -10,7 +10,7 @@ from logging.handlers import RotatingFileHandler
 from gpiozero import Button
 from gpiozero import LEDBoard
 
-DELAY = 20
+DELAY = 10
 
 # Настройка логирования.
 logging.basicConfig(
