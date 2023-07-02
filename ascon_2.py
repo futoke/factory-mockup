@@ -81,7 +81,7 @@ def main():
             num = next(videos)
             print(f'video {num}')
             play_video(f'{num}.mp4')
-            time.sleep(1)
+            time.sleep(0.1)
 
         if button_2.is_pressed:
             leds.value = (0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
