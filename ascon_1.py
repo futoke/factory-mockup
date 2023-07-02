@@ -52,7 +52,8 @@ def start_player():
         subprocess.Popen([
             'nohup',
             'mpv',
-            '--hwdec=v4l2m2m',
+            # '--hwdec=v4l2m2m',
+            '--hwdec=mmal',
             '--audio-device=alsa/hdmi:CARD=vc4hdmi0,DEV=0',
             '--playlist=/home/ascon/factory-mockup/video/all-1.pls',
             '--fullscreen',
