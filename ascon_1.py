@@ -18,7 +18,7 @@ from logging.handlers import RotatingFileHandler
 from gpiozero import Button
 from gpiozero import LEDBoard
 
-BOUNCE_TIME = 0.1
+BOUNCE_TIME = 0.2
 
 # Настройка логирования.
 logging.basicConfig(
