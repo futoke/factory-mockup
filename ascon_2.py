@@ -23,19 +23,14 @@ logging.basicConfig(
 )
 
 # Настройка кнопок.
-button_1 = Button(2)
-button_2 = Button(3)
-button_3 = Button(4)
-button_4 = Button(17)
-button_5 = Button(27)
-button_6 = Button(22)
-button_7 = Button(10)
-button_8 = Button(9)
+button_1 = Button(17)
+button_2 = Button(4)
+button_3 = Button(3)
+button_4 = Button(2)
 
 # Настройка светодиодов.
-leds = LEDBoard(14, 15, 18)
-leds.value = (1, 0, 0)
-
+leds = LEDBoard(14, 15, 18, 23, 24, 25, 8, 7, 12, 6, 5, 11, 9, 10, 22, 27)
+leds.value = (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 
 def start_player():
     logging.info('Start player')
@@ -44,7 +39,7 @@ def start_player():
             'nohup',
             'mpv',
             '--hwdec=v4l2m2m',
-            '--playlist=video/all-1.pls',
+            '--playlist=video/all-2.pls',
             '--fullscreen',
             '--script-opts=osc-showfullscreen=no',
             '--loop-playlist=inf',
@@ -76,39 +71,20 @@ def play_video(filename):
 def main():
     start_player()
 
-
     while True:
         if button_1.is_pressed:
             leds.value = (1, 0, 0)
             play_video('1.mp4')
 
         if button_2.is_pressed:
-            leds.value = (0, 1, 0)
-            play_video('2.mp4')
-
+            leds.value = (1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+            
         if button_3.is_pressed:
-            leds.value = (1, 0, 0)
-            play_video('3.mp4')
-
+            leds.value = (0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0)
+            
         if button_4.is_pressed:
-            leds.value = (0, 1, 0)
-            play_video('4.mp4')
-
-        if button_5.is_pressed:
-            leds.value = (0, 0, 1)
-            play_video('5.mp4')
-
-        if button_6.is_pressed:
-            leds.value = (0, 0, 1)
-            play_video('6.mp4')
-
-        if button_7.is_pressed:
-            leds.value = (0, 0, 1)
-            play_video('7.mp4')
-
-        if button_8.is_pressed:
-            leds.value = (0, 0, 1)
-            play_video('8.mp4')
+            leds.value = (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1)
+            
 
         time.sleep(0.05)
 
