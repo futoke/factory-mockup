@@ -34,6 +34,7 @@ button_8 = Button(9)
 
 # Настройка светодиодов.
 leds = LEDBoard(14, 15, 18)
+leds.value = (1, 0, 0)
 
 
 def start_player():
