@@ -4,6 +4,7 @@ import random
 import logging
 import subprocess
 
+from itertools import cycle
 from logging.handlers import RotatingFileHandler
 
 from gpiozero import Button
@@ -31,6 +32,10 @@ button_4 = Button(2)
 # Настройка светодиодов.
 leds = LEDBoard(14, 15, 18, 23, 24, 25, 8, 7, 12, 6, 5, 11, 9, 10, 22, 27)
 leds.value = (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+
+# Перебираемые видеоролики.
+videos = cycle((1, 2, 3, 4))
+
 
 def start_player():
     logging.info('Start player')
@@ -74,16 +79,16 @@ def main():
     while True:
         if button_1.is_pressed:
             leds.value = (1, 0, 0)
-            play_video('1.mp4')
+            play_video(f'{next(videos)}.mp4')
 
         if button_2.is_pressed:
-            leds.value = (1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+            leds.value = (0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
             
         if button_3.is_pressed:
-            leds.value = (0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0)
+            leds.value = (1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1)
             
         if button_4.is_pressed:
-            leds.value = (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1)
+            leds.value = (1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0)
             
 
         time.sleep(0.05)
