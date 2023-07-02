@@ -1,3 +1,4 @@
+# sudo apt install mpv socat
 import time
 import random
 import logging
@@ -21,14 +22,16 @@ logging.basicConfig(
 )
 
 # Настройка кнопок.
-button_1 = Button(2)
-button_2 = Button(3)
-button_3 = Button(4)
-button_4 = Button(17)
-button_5 = Button(27)
-button_6 = Button(22)
-button_7 = Button(10)
-button_8 = Button(9)
+buttons = [
+    Button(2),
+    Button(3),
+    Button(4),
+    Button(17),
+    Button(27),
+    Button(22),
+    Button(10),
+    Button(9)
+]
 
 
 def start_player():
@@ -69,41 +72,44 @@ def play_video(filename):
 
 def main():
     start_player()
-    
 
     while True:
-        if button_1.is_pressed:
-            print('Button 1 is pressed')
-            play_video('1.mp4')
-            continue
-        if button_2.is_pressed:
-            print('Button 2 is pressed')
-            play_video('2.mp4')
-            continue
-        if button_3.is_pressed:
-            print('Button 3 is pressed')
-            play_video('3.mp4')
-            continue
-        if button_4.is_pressed:
-            print('Button 4 is pressed')
-            play_video('4.mp4')
-            continue
-        if button_5.is_pressed:
-            print('Button 5 is pressed')
-            play_video('5.mp4')
-            continue
-        if button_6.is_pressed:
-            print('Button 6 is pressed')
-            play_video('6.mp4')
-            continue
-        if button_7.is_pressed:
-            print('Button 7 is pressed')
-            play_video('7.mp4')
-            continue
-        if button_8.is_pressed:
-            print('Button 8 is pressed')
-            play_video('8.mp4')
-            continue
+        for idx, button in enumerate(buttons):
+            if button.is_pressed:
+                play_video(f'{idx+1}.mp4')
+                break
+        # if button_1.is_pressed:
+        #     print('Button 1 is pressed')
+        #     play_video('1.mp4')
+        #     continue
+        # if button_2.is_pressed:
+        #     print('Button 2 is pressed')
+        #     play_video('2.mp4')
+        #     continue
+        # if button_3.is_pressed:
+        #     print('Button 3 is pressed')
+        #     play_video('3.mp4')
+        #     continue
+        # if button_4.is_pressed:
+        #     print('Button 4 is pressed')
+        #     play_video('4.mp4')
+        #     continue
+        # if button_5.is_pressed:
+        #     print('Button 5 is pressed')
+        #     play_video('5.mp4')
+        #     continue
+        # if button_6.is_pressed:
+        #     print('Button 6 is pressed')
+        #     play_video('6.mp4')
+        #     continue
+        # if button_7.is_pressed:
+        #     print('Button 7 is pressed')
+        #     play_video('7.mp4')
+        #     continue
+        # if button_8.is_pressed:
+        #     print('Button 8 is pressed')
+        #     play_video('8.mp4')
+        #     continue
         time.sleep(0.05)
 
 
