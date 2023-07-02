@@ -54,7 +54,7 @@ def start_player():
             'mpv',
             '--hwdec=v4l2m2m',
             '--audio-device=alsa/hdmi:CARD=vc4hdmi0,DEV=0',
-            '--playlist=/home/ascon/factsory-mockup/video/all-1.pls',
+            '--playlist=/home/ascon/factory-mockup/video/all-1.pls',
             '--fullscreen',
             '--script-opts=osc-showfullscreen=no',
             '--loop-playlist=inf',
