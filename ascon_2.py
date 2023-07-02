@@ -24,10 +24,10 @@ logging.basicConfig(
 )
 
 # Настройка кнопок.
-button_1 = Button(17)
-button_2 = Button(4)
-button_3 = Button(3)
-button_4 = Button(2)
+button_1 = Button(17, bounce_time=0.1)
+button_2 = Button(4, bounce_time=0.1)
+button_3 = Button(3, bounce_time=0.1)
+button_4 = Button(2, bounce_time=0.1)
 
 # Настройка светодиодов.
 leds = LEDBoard(14, 15, 18, 23, 24, 25, 8, 7, 12, 6, 5, 11, 9, 10, 22, 27)
@@ -81,7 +81,6 @@ def main():
             num = next(videos)
             print(f'video {num}')
             play_video(f'{num}.mp4')
-            time.sleep(0.1)
 
         if button_2.is_pressed:
             leds.value = (0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
