@@ -84,6 +84,7 @@ def main():
             # num = next(videos)
             # print(f'video {num}')
             play_video(f'{current_video}.mp4')
+            print(current_video)
             current_video += 1
             if current_video > NUM_VIDEOS:
                 current_video = 1
