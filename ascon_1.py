@@ -53,7 +53,7 @@ def start_player():
             'nohup',
             'mpv',
             '--hwdec=v4l2m2m',
-            '--audio-device=pulse/alsa_output.platform-fef05700.hdmi.hdmi-stereo',
+            '--audio-device=alsa/hdmi:CARD=vc4hdmi0,DEV=0',
             '--playlist=/home/ascon/factsory-mockup/video/all-1.pls',
             '--fullscreen',
             '--script-opts=osc-showfullscreen=no',
