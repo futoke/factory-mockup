@@ -43,9 +43,8 @@ def start_player():
     logging.info('Start player')
     try:
         subprocess.Popen([
-            # 'nohup',
+            'nohup',
             'mpv',
-            # '--hwdec=v4l2m2m',
             '--hwdec=mmal',
             '--playlist=video/all-2.pls',
             '--fullscreen',
@@ -58,7 +57,7 @@ def start_player():
 
     
 def play_video(filename):
-    # logging.info(f'Playing video file {filename}')
+    logging.info(f'Playing video file {filename}')
     try:
         echo = subprocess.Popen(
             ['echo', f'loadfile video/{filename}'],
@@ -85,10 +84,7 @@ def main():
             if delay:
                 delay -= 1
             else:
-                num = next(videos)
-                print(f'video {num}')
-                play_video(f'{num}.mp4')
-
+                play_video(f'{next(videos)}.mp4')
                 delay = DELAY
 
         if button_2.is_pressed:
@@ -100,7 +96,6 @@ def main():
         if button_4.is_pressed:
             leds.value = (1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0)
             
-
         time.sleep(0.05)
 
 
