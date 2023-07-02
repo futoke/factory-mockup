@@ -33,7 +33,7 @@ button_4 = Button(2)
 
 # Настройка светодиодов.
 leds = LEDBoard(14, 15, 18, 23, 24, 25, 8, 7, 12, 6, 5, 11, 9, 10, 22, 27)
-leds.value = (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+leds.value = (1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
 
 # Перебираемые видеоролики.
 videos = cycle((1, 2, 3, 4))
@@ -43,7 +43,7 @@ def start_player():
     logging.info('Start player')
     try:
         subprocess.Popen([
-            'nohup',
+            # 'nohup',
             'mpv',
             '--hwdec=v4l2m2m',
             '--playlist=video/all-2.pls',
@@ -51,7 +51,7 @@ def start_player():
             '--script-opts=osc-showfullscreen=no',
             '--loop-playlist=inf',
             '--input-ipc-server=/tmp/mpvsocket',
-            '--idle'
+            # '--idle'
         ], close_fds=False)
     except Exception as ex:
         logging.error('Exception occurred', exc_info=True)
