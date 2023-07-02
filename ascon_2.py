@@ -27,13 +27,13 @@ logging.basicConfig(
 
 # Настройка кнопок.
 button_1 = Button(17)
-button_2 = Button(4)
-button_3 = Button(3)
-button_4 = Button(2)
+# button_2 = Button(4)
+# button_3 = Button(3)
+# button_4 = Button(2)
 
 # Настройка светодиодов.
-leds = LEDBoard(14, 15, 18, 23, 24, 25, 8, 7, 12, 6, 5, 11, 9, 10, 22, 27)
-leds.value = (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+# leds = LEDBoard(14, 15, 18, 23, 24, 25, 8, 7, 12, 6, 5, 11, 9, 10, 22, 27)
+# leds.value = (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 
 # Перебираемые видеоролики.
 videos = cycle((1, 2, 3, 4))
@@ -91,14 +91,14 @@ def main():
 
                 delay = DELAY
 
-        if button_2.is_pressed:
-            leds.value = (0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
+        # if button_2.is_pressed:
+        #     leds.value = (0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
             
-        if button_3.is_pressed:
-            leds.value = (1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1)
+        # if button_3.is_pressed:
+        #     leds.value = (1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1)
             
-        if button_4.is_pressed:
-            leds.value = (1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0)
+        # if button_4.is_pressed:
+        #     leds.value = (1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0)
             
 
         time.sleep(0.05)
