@@ -58,7 +58,7 @@ def play_video(filename):
     logging.info(f'Playing video file {filename}')
     try:
         echo = subprocess.Popen(
-            ['echo', f'loadfile video/{filename}'],
+            ['echo', f'loadfile /home/ascon/factory-mockup/video/{filename}'],
             stdout=subprocess.PIPE, 
             text=True
         )
