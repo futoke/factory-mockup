@@ -50,7 +50,8 @@ def start_player():
             '--fullscreen',
             '--script-opts=osc-showfullscreen=no',
             '--loop-playlist=inf',
-            '--input-ipc-server=/tmp/mpvsocket'
+            '--input-ipc-server=/tmp/mpvsocket',
+            '--idle'
         ], close_fds=False)
     except Exception as ex:
         logging.error('Exception occurred', exc_info=True)

@@ -76,7 +76,6 @@ def play_video(filename):
 def main():
     start_player()
 
-
     while True:
         if button_1.is_pressed:
             leds.value = (1, 0, 0)
