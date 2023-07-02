@@ -1,9 +1,11 @@
 # sudo apt install mpv socat
+
+# mkdir -p /home/ascon/.config/autostart
 # nano /home/ascon/.config/autostart/acson.desktop
 
 # [Desktop Entry]
 # Type=Application
-# Name=Clock
+# Name=Ascon
 # Exec=/usr/bin/python3 /home/ascon/factory-mockup/ascon_1.py
 
 import time
@@ -51,7 +53,8 @@ def start_player():
             'nohup',
             'mpv',
             '--hwdec=v4l2m2m',
-            '--playlist=/home/ascon/factory-mockup/video/all-1.pls',
+            '--audio-device=pulse/alsa_output.platform-fef05700.hdmi.hdmi-stereo',
+            '--playlist=/home/ascon/factsory-mockup/video/all-1.pls',
             '--fullscreen',
             '--script-opts=osc-showfullscreen=no',
             '--loop-playlist=inf',
