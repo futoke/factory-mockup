@@ -19,7 +19,6 @@ logging.basicConfig(
   format='%(asctime)s %(levelname)s PID %(process)d %(message)s'
 )
 
-
 # Настройка кнопок.
 button_1 = Button(2)
 button_2 = Button(3)
