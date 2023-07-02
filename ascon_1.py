@@ -18,6 +18,8 @@ from logging.handlers import RotatingFileHandler
 from gpiozero import Button
 from gpiozero import LEDBoard
 
+BOUNCE_TIME = 0.1
+
 # Настройка логирования.
 logging.basicConfig(
     handlers=[
@@ -32,14 +34,14 @@ logging.basicConfig(
 )
 
 # Настройка кнопок.
-button_1 = Button(2)
-button_2 = Button(3)
-button_3 = Button(4)
-button_4 = Button(17)
-button_5 = Button(27)
-button_6 = Button(22)
-button_7 = Button(10)
-button_8 = Button(9)
+button_1 = Button(2, bounce_time=BOUNCE_TIME)
+button_2 = Button(3, bounce_time=BOUNCE_TIME)
+button_3 = Button(4, bounce_time=BOUNCE_TIME)
+button_4 = Button(17, bounce_time=BOUNCE_TIME)
+button_5 = Button(27, bounce_time=BOUNCE_TIME)
+button_6 = Button(22, bounce_time=BOUNCE_TIME)
+button_7 = Button(10, bounce_time=BOUNCE_TIME)
+button_8 = Button(9, bounce_time=BOUNCE_TIME)
 
 # Настройка светодиодов.
 leds = LEDBoard(14, 15, 18)
