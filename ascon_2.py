@@ -78,8 +78,9 @@ def main():
 
     while True:
         if button_1.is_pressed:
-            leds.value = (1, 0, 0)
-            play_video(f'{next(videos)}.mp4')
+            num = next(videos)
+            print(f'video {num}')
+            play_video(f'{num}.mp4')
 
         if button_2.is_pressed:
             leds.value = (0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
