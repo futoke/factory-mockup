@@ -45,13 +45,13 @@ def start_player():
         subprocess.Popen([
             # 'nohup',
             'mpv',
-            '--hwdec=v4l2m2m',
+            # '--hwdec=v4l2m2m',
+            '--hwdec=mmal',
             '--playlist=video/all-2.pls',
             '--fullscreen',
             '--script-opts=osc-showfullscreen=no',
             '--loop-playlist=inf',
-            '--input-ipc-server=/tmp/mpvsocket',
-            # '--idle'
+            '--input-ipc-server=/tmp/mpvsocket'
         ], close_fds=False)
     except Exception as ex:
         logging.error('Exception occurred', exc_info=True)
