@@ -16,7 +16,7 @@ DELAY = 5
 logging.basicConfig(
     handlers=[
         RotatingFileHandler(
-            'logs/mockup.log',
+            '/home/ascon/factory-mockup/logs/mockup.log',
             maxBytes=100000,
             backupCount=50
         )
