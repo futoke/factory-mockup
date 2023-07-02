@@ -68,7 +68,8 @@ def play_video(filename):
 
 
 def main():
-    # start_player()
+    start_player()
+    
 
     while True:
         if button_1.is_pressed:
