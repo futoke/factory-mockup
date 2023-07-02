@@ -3,6 +3,7 @@ import random
 import logging
 import subprocess
 
+from logging.handlers import RotatingFileHandler
 from gpiozero import Button
 
 
