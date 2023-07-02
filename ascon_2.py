@@ -10,7 +10,7 @@ from logging.handlers import RotatingFileHandler
 from gpiozero import Button
 from gpiozero import LEDBoard
 
-NUM_VIDEOS = 4
+DELAY = 20
 
 # Настройка логирования.
 logging.basicConfig(
@@ -36,7 +36,7 @@ leds = LEDBoard(14, 15, 18, 23, 24, 25, 8, 7, 12, 6, 5, 11, 9, 10, 22, 27)
 leds.value = (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 
 # Перебираемые видеоролики.
-# videos = cycle((1, 2, 3, 4))
+videos = cycle((1, 2, 3, 4))
 
 
 def start_player():
@@ -77,17 +77,18 @@ def play_video(filename):
 
 def main():
     start_player()
-    current_video = 1
+    delay = DELAY
 
     while True:
         if button_1.is_pressed:
-            # num = next(videos)
-            # print(f'video {num}')
-            play_video(f'{current_video}.mp4')
-            print(current_video)
-            current_video += 1
-            if current_video > NUM_VIDEOS:
-                current_video = 1
+            if delay:
+                delay -= 1
+            else:
+                num = next(videos)
+                print(f'video {num}')
+                play_video(f'{num}.mp4')
+
+                delay = DELAY
 
         if button_2.is_pressed:
             leds.value = (0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
