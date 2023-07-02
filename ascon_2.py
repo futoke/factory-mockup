@@ -83,7 +83,7 @@ def main():
         if button_1.is_pressed:
             # num = next(videos)
             # print(f'video {num}')
-            play_video(f'{current_video}.mp4')
+            play_video('1.mp4')
             print(current_video)
             current_video += 1
             if current_video > NUM_VIDEOS:
