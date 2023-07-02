@@ -1,4 +1,11 @@
 # sudo apt install mpv socat
+# nano /home/ascon/.config/autostart/acson.desktop
+
+# [Desktop Entry]
+# Type=Application
+# Name=Clock
+# Exec=/usr/bin/python3 /home/ascon/factory-mockup/ascon_1.py
+
 import time
 import random
 import logging
