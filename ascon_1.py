@@ -44,7 +44,7 @@ def start_player():
             'nohup',
             'mpv',
             '--hwdec=v4l2m2m',
-            '--playlist=video/all-1.pls',
+            '--playlist=/home/ascon/factory-mockup/video/all-1.pls',
             '--fullscreen',
             '--script-opts=osc-showfullscreen=no',
             '--loop-playlist=inf',
