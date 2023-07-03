@@ -112,7 +112,7 @@ def send_data(data, slave_id=1, address=1):
 
 
 def main():
-    start_player()
+    # start_player()
     delay = DELAY    
 
     while True:
