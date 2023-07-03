@@ -117,6 +117,7 @@ def main():
 
     while True:
         if button_1.is_pressed:
+            print(f'send 111')
             if delay:
                 delay -= 1
             else:
