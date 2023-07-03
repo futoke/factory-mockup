@@ -17,7 +17,7 @@ data_store = defaultdict(int)
 conf.SIGNED_VALUES = True
 
 TCPServer.allow_reuse_address = True
-app = get_server(TCPServer, ('localhost', 5020), RequestHandler)
+app = get_server(TCPServer, ('192.168.1.53', 5020), RequestHandler)
 
 
 @app.route(slave_ids=[1], function_codes=[3, 4], addresses=list(range(0, 10)))

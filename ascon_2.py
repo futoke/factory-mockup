@@ -125,8 +125,11 @@ def main():
 
         if button_2.is_pressed:
             send_data(data=randint(20, 150), address=1)
+            print(f'send 1')
             send_data(data=randint(200, 1000), address=2)
+            print(f'send 1')
             send_data(data=randint(75, 95), address=3)
+            print(f'send 1')
             leds.value = (0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
             
         if button_3.is_pressed:
