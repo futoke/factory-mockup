@@ -25,6 +25,7 @@ from gpiozero import Button
 from gpiozero import LEDBoard
 
 DELAY = 5
+PREFIX = '/home/ascon/factory-mockup'
 MODBUS_IP = '192.168.11.11'
 MODBUS_PORT = 5020
 
@@ -32,7 +33,7 @@ MODBUS_PORT = 5020
 logging.basicConfig(
     handlers=[
         RotatingFileHandler(
-            '/home/ascon/factory-mockup/logs/mockup.log',
+            f'{PREFIX}/logs/mockup.log',
             maxBytes=100000,
             backupCount=50
         )
@@ -63,7 +64,7 @@ def start_player():
             'mpv',
             '--hwdec=mmal',
             '--audio-device=alsa/hdmi:CARD=vc4hdmi0,DEV=0',
-            '--playlist=/home/ascon/factory-mockup/video/all-2.pls',
+            f'--playlist={PREFIX}/video/all-2.pls',
             '--fullscreen',
             '--script-opts=osc-showfullscreen=no',
             '--loop-playlist=inf',
@@ -77,7 +78,7 @@ def play_video(filename):
     logging.info(f'Playing video file {filename}')
     try:
         echo = subprocess.Popen(
-            ['echo', f'loadfile /home/ascon/factory-mockup/video/{filename}'],
+            ['echo', f'loadfile {PREFIX}/video/{filename}'],
             stdout=subprocess.PIPE, 
             text=True
         )
@@ -91,10 +92,12 @@ def play_video(filename):
     except Exception as ex:
         logging.error('Exception occurred', exc_info=True)
 
+
 def send_data(data, slave_id=1, address=1):
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     try:
         sock.connect((MODBUS_IP, MODBUS_PORT))
+        
         message = tcp.write_single_register(
             slave_id=slave_id,
             address=address, 
