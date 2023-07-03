@@ -32,7 +32,8 @@ MODBUS_PORT = 5020
 logging.basicConfig(
     handlers=[
         RotatingFileHandler(
-            '/home/ascon/factory-mockup/logs/mockup.log',
+            # '/home/ascon/factory-mockup/logs/mockup.log',
+            'logs/mockup.log',
             maxBytes=100000,
             backupCount=50
         )
@@ -119,7 +120,7 @@ def main():
             if delay:
                 delay -= 1
             else:
-                play_video(f'{next(videos)}.mp4')
+                # play_video(f'{next(videos)}.mp4')
                 delay = DELAY
 
         if button_2.is_pressed:
