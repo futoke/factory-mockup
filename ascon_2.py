@@ -25,15 +25,14 @@ from gpiozero import Button
 from gpiozero import LEDBoard
 
 DELAY = 5
-MODBUS_IP = '192.168.1.53'
+MODBUS_IP = '192.168.11.11'
 MODBUS_PORT = 5020
 
 # Настройка логирования.
 logging.basicConfig(
     handlers=[
         RotatingFileHandler(
-            # '/home/ascon/factory-mockup/logs/mockup.log',
-            'logs/mockup.log',
+            '/home/ascon/factory-mockup/logs/mockup.log',
             maxBytes=100000,
             backupCount=50
         )
@@ -110,26 +109,21 @@ def send_data(data, slave_id=1, address=1):
         sock.close()
 
 
-
 def main():
-    # start_player()
+    start_player()
     delay = DELAY    
 
     while True:
         if button_1.is_pressed:
-            print(f'send 111')
             if delay:
                 delay -= 1
             else:
-                # play_video(f'{next(videos)}.mp4')
+                play_video(f'{next(videos)}.mp4')
                 delay = DELAY
 
         if button_2.is_pressed:
-            print(f'send 1')
             send_data(data=randint(20, 150), address=1)
-            print(f'send 2')
             send_data(data=randint(200, 1000), address=2)
-            print(f'send 3')
             send_data(data=randint(75, 95), address=3)
             
             leds.value = (0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
