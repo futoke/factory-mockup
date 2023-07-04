@@ -103,12 +103,13 @@ def play_video(filename):
         logging.error('Exception occurred', exc_info=True)
 
 
-def send_data_to_db(reg, data):
+def send_data_to_db(data):
     try:
         con = sqlite3.connect(f'{PREFIX}/exchange.db')
 
         cursor = con.cursor()
-        cursor.execute(f'UPDATE registers SET reg{reg} = {data} where id = 1')
+        for reg, dt in enumerate(data):
+            cursor.execute(f'UPDATE registers SET reg{reg+1} = {dt} where id = 1')
         
         con.commit()
     except Exception:
@@ -132,24 +133,17 @@ def main():
                 delay = DELAY
 
         if button_2.is_pressed:
-            send_data_to_db(1, randint(20, 150))
-            send_data_to_db(2, randint(200, 1000))
-            send_data_to_db(3, randint(75, 95))
-            
-            leds.value = (0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
-            
+            send_data_to_db((   1,    2,    3,    0,    0,    0,    0,    0))
+            leds.value =    (0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
+        
+        # Выключены -- 0, красный -- 1, желтый -- 2, зеленый -- 3
         if button_3.is_pressed:
-            send_data_to_db(4, randint(1000, 10000))
-            send_data_to_db(5, randint(2000, 3000))
-            send_data_to_db(6, randint(0, 10))
-
-            leds.value = (1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1)
+            send_data_to_db((   0,    0,    0,    1,    2,    3,    0,    0))
+            leds.value =    (1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1)
             
         if button_4.is_pressed:
-            send_data_to_db(7, randint(1, 50))
-            send_data_to_db(8, randint(-100, 100))
-
-            leds.value = (1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0)
+            send_data_to_db((   0,    0,    0,    0,    0,    0,    1,    3))
+            leds.value =    (1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0)
             
         time.sleep(0.05)
 
