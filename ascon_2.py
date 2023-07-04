@@ -28,8 +28,6 @@ from gpiozero import LEDBoard
 DELAY = 5
 PREFIX = '/home/ascon/factory-mockup'
 # PREFIX = '/home/ichiro/factory-mockup'
-MODBUS_IP = '192.168.11.11'
-MODBUS_PORT = 5020
 
 # Настройка логирования.
 logging.basicConfig(
@@ -135,21 +133,23 @@ def main():
                 delay = DELAY
 
         if button_2.is_pressed:
-            send_data(data=randint(20, 150), address=1)
-            send_data(data=randint(200, 1000), address=2)
-            send_data(data=randint(75, 95), address=3)
+            send_data_to_db(1, randint(20, 150))
+            send_data_to_db(2, randint(200, 1000))
+            send_data_to_db(3, randint(75, 95))
             
             leds.value = (0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
             
         if button_3.is_pressed:
-            send_data(data=randint(1000, 10000), address=4)
-            send_data(data=randint(2000, 3000), address=5)
-            send_data(data=randint(0, 10), address=6)
+            send_data_to_db(4, randint(1000, 10000))
+            send_data_to_db(5, randint(2000, 3000))
+            send_data_to_db(6, randint(0, 10))
+
             leds.value = (1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1)
             
         if button_4.is_pressed:
-            send_data(data=randint(1, 50), address=7)
-            send_data(data=randint(-100, 100), address=8)
+            send_data_to_db(7, randint(1, 50))
+            send_data_to_db(8, randint(-100, 100))
+
             leds.value = (1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0)
             
         time.sleep(0.05)
