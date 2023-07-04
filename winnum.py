@@ -7,7 +7,7 @@ from umodbus.client import tcp
 from itertools import cycle
 from random import randint
 
-MODBUS_IP = 'localhost'
+MODBUS_IP = '192.168.0.5'
 MODBUS_PORT = 5020
 
 
@@ -17,7 +17,7 @@ def get_data():
         sock.connect((MODBUS_IP, MODBUS_PORT))
         message = tcp.read_holding_registers(
             slave_id=1, 
-            starting_address=1,
+            starting_address=40001,
             quantity=8
         )
         response = tcp.send_message(message, sock)
