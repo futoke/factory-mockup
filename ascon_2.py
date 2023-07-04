@@ -9,9 +9,8 @@
 # Name=Ascon
 # Exec=/usr/bin/python3 /home/ascon/factory-mockup/ascon_2.py
 
-import sqlite3
 import time
-import socket
+import sqlite3
 import logging
 import subprocess
 
