@@ -17,7 +17,7 @@ def get_data():
         sock.connect((MODBUS_IP, MODBUS_PORT))
         message = tcp.read_holding_registers(
             slave_id=1, 
-            starting_address=40001,
+            starting_address=1,
             quantity=8
         )
         response = tcp.send_message(message, sock)
