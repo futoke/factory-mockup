@@ -9,6 +9,7 @@
 # Name=Ascon
 # Exec=/usr/bin/python3 /home/ascon/factory-mockup/ascon_2.py
 
+import sqlite3
 import time
 import socket
 import logging
@@ -26,6 +27,7 @@ from gpiozero import LEDBoard
 
 DELAY = 5
 PREFIX = '/home/ascon/factory-mockup'
+# PREFIX = '/home/ichiro/factory-mockup'
 MODBUS_IP = '192.168.11.11'
 MODBUS_PORT = 5020
 
@@ -56,8 +58,19 @@ leds.value = (1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
 videos = cycle((1, 2, 3, 4))
 
 
+def start_server():
+    logging.info('Start modbus server')
+    try:
+        subprocess.Popen([
+            'py',
+            'ascon_server.py'
+        ], close_fds=False)
+    except Exception:
+        logging.error('Exception occurred', exc_info=True)
+
+
 def start_player():
-    logging.info('Start player')
+    logging.info('Start video player')
     try:
         subprocess.Popen([
             'nohup',
@@ -89,31 +102,28 @@ def play_video(filename):
             text=True
         )
         socat.communicate()
-    except Exception as ex:
+    except Exception:
         logging.error('Exception occurred', exc_info=True)
 
 
-def send_data(data, slave_id=1, address=1):
-    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+def send_data_to_db(reg, data):
     try:
-        sock.connect((MODBUS_IP, MODBUS_PORT))
-        
-        message = tcp.write_single_register(
-            slave_id=slave_id,
-            address=address, 
-            value=data
-        )
-        response = tcp.send_message(message, sock)
-        logging.info(f'Receive response from modbus server: {response}')
+        con = sqlite3.connect(f'{PREFIX}/exchange.db')
 
-    except Exception as ex:
+        cursor = con.cursor()
+        cursor.execute(f'UPDATE registers SET reg{reg} = {data} where id = 1')
+        
+        con.commit()
+    except Exception:
         logging.error('Exception occurred', exc_info=True)
     finally:
-        sock.close()
+        con.close()
 
 
 def main():
+    start_server()
     start_player()
+
     delay = DELAY    
 
     while True:
