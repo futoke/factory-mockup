@@ -33,7 +33,7 @@ def get_data_from_db():
     return data
 
 
-@app.route(slave_ids=[1], function_codes=[3, 4], addresses=list(range(1, 9)))
+@app.route(slave_ids=[1], function_codes=[3, 4], addresses=list(range(40001, 40009)))
 def read_data(slave_id, function_code, address):
     data = get_data_from_db()
     return data[address]
