@@ -124,8 +124,6 @@ def main():
 
     delay = DELAY
 
-    send_data_to_db((0, 0, 0, 0, 0, 0, 0, 0))
-
     while True:
         if button_1.is_pressed:
             if delay:
