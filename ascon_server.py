@@ -17,7 +17,7 @@ app = get_server(TCPServer, (MODBUS_IP, MODBUS_PORT), RequestHandler)
 
 
 def get_data_from_db():
-    data = []
+    data = [0, 0, 0, 0, 0, 0, 0, 0]
     try:
         con = sqlite3.connect(f'{PREFIX}/exchange.db')
 
