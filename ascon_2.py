@@ -25,8 +25,8 @@ from gpiozero import Button
 from gpiozero import LEDBoard
 
 DELAY = 5
-PREFIX = '/home/ascon/factory-mockup'
-# PREFIX = '/home/ichiro/factory-mockup'
+# PREFIX = '/home/ascon/factory-mockup'
+PREFIX = '/home/ichiro/factory-mockup'
 
 # Настройка логирования.
 logging.basicConfig(
