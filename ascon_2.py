@@ -54,6 +54,9 @@ leds.value = (1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
 # Перебираемые видеоролики.
 videos = cycle((1, 2, 3, 4))
 
+# Перебираем состояния.
+cncs = [cycle((0, 1, 2, 3)) for cnc in range(1, 9)]
+
 
 def start_server():
     logging.info('Start modbus server')
@@ -131,18 +134,18 @@ def main():
             else:
                 play_video(f'{next(videos)}.mp4')
                 delay = DELAY
-
+        # Выключены -- 0, красный -- 1, желтый -- 2, зеленый -- 3.
         if button_2.is_pressed:
-            send_data_to_db((   1,    2,    3,    0,    0,    0,    0,    0))
+            # send_data_to_db((   1,    2,    3,    0,    0,    0,    0,    0))
+            send_data_to_db((next(cncs[1]), next(cncs[2]), next(cncs[3]), 0, 0, 0, 0, 0))
             leds.value =    (0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
         
-        # Выключены -- 0, красный -- 1, желтый -- 2, зеленый -- 3
         if button_3.is_pressed:
-            send_data_to_db((   0,    0,    0,    1,    2,    3,    0,    0))
+            send_data_to_db((0, 0, 0, next(cncs[4]), next(cncs[5]), next(cncs[6]), 0, 0))
             leds.value =    (1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1)
             
         if button_4.is_pressed:
-            send_data_to_db((   0,    0,    0,    0,    0,    0,    1,    3))
+            send_data_to_db((0, 0, 0, 0, 0, 0, next(cncs[7]), next(cncs[8])))
             leds.value =    (1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0)
             
         time.sleep(0.05)
