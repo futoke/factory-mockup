@@ -24,7 +24,7 @@ from logging.handlers import RotatingFileHandler
 from gpiozero import Button
 from gpiozero import LEDBoard
 
-DELAY = 5
+DELAY = 3
 # PREFIX = '/home/ascon/factory-mockup'
 PREFIX = '/home/ichiro/factory-mockup'
 
