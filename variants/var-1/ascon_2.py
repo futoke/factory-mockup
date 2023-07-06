@@ -59,7 +59,7 @@ def start_server():
     logging.info('Start modbus server')
     try:
         subprocess.Popen([
-            '/usr/bin/python3/python3',
+            '/usr/bin/python3',
             f'{PREFIX}/ascon_server.py'
         ], close_fds=False)
     except Exception:
