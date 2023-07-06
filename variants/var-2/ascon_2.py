@@ -126,40 +126,27 @@ def main():
     start_server()
     start_player()
 
-    delays = [DELAY, DELAY, DELAY, DELAY]
+    delay = DELAY
 
     while True:
+        send_data_to_db((grs(), grs(), grs(), grs(), grs(), grs(), grs(), grs()))
+
         if button_1.is_pressed:
-            if delays[0]:
-                delays[0] -= 1
+            if delay:
+                delay -= 1
             else:
                 play_video(f'{next(videos)}.mp4')
-                delays[0] = DELAY
+                delay = DELAY
 
         # Выключены -- 0, красный -- 1, желтый -- 2, зеленый -- 3
         if button_2.is_pressed:
-            if delays[1]:
-                delays[1] -= 1
-            else:
-                send_data_to_db((grs(), grs(), grs(), 0, 0, 0, 0, 0))
-                leds.value =    (0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
-                delays[1] = DELAY
+            leds.value = (0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
             
         if button_3.is_pressed:
-            if delays[2]:
-                    delays[2] -= 1
-            else:
-                send_data_to_db((0, 0, 0, grs(), grs(), grs(), 0, 0))
-                leds.value =    (1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1)
-                delays[2] = DELAY
+            leds.value = (1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1)
             
         if button_4.is_pressed:
-            if delays[3]:
-                    delays[3] -= 1
-            else:
-                send_data_to_db((0, 0, 0, 0, 0, 0, grs(), grs()))
-                leds.value =    (1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0)
-                delays[3] = DELAY
+            leds.value = (1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0)
             
         time.sleep(0.05)
 
