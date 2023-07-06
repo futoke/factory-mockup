@@ -24,7 +24,7 @@ from logging.handlers import RotatingFileHandler
 from gpiozero import Button
 from gpiozero import LEDBoard
 
-DELAY = 5
+DELAY = 4
 PREFIX = '/home/ascon/factory-mockup'
 # PREFIX = '/home/ichiro/factory-mockup'
 
@@ -59,8 +59,8 @@ def start_server():
     logging.info('Start modbus server')
     try:
         subprocess.Popen([
-            'python3',
-            'ascon_server.py'
+            '/usr/bin/python3/python3',
+            f'{PREFIX}/ascon_server.py'
         ], close_fds=False)
     except Exception:
         logging.error('Exception occurred', exc_info=True)
