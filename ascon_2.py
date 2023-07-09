@@ -129,16 +129,19 @@ def cycle_video():
 
 
 def run_cnc_group_1():
+    print('group 1')
     send_data_to_db((grs(), grs(), grs(), 0, 0, 0, 0, 0))
     leds.value =    (0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
 
 
 def run_cnc_group_2():
+    print('group 2')
     send_data_to_db((0, 0, 0, grs(), grs(), grs(), 0, 0))
     leds.value =    (1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1)
 
 
 def run_cnc_group_3():
+    print('group 3')
     send_data_to_db((0, 0, 0, 0, 0, 0, grs(), grs()))
     leds.value =    (1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0)
 
