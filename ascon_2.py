@@ -120,7 +120,6 @@ def send_data_to_db(data):
 
 
 def grs():
-    # seed(4815162342)
     return randint(0, 3)
 
 
