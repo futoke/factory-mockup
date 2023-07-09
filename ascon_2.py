@@ -9,6 +9,7 @@
 # Name=Ascon
 # Exec=/usr/bin/python3 /home/ascon/factory-mockup/ascon_2.py
 
+from signal import pause
 import time
 import sqlite3
 import logging
@@ -18,15 +19,15 @@ from umodbus import conf
 from umodbus.client import tcp
 
 from itertools import cycle
-from random import randint
+from random import randint, seed
 from logging.handlers import RotatingFileHandler
 
 from gpiozero import Button
 from gpiozero import LEDBoard
 
 DELAY = 4
-PREFIX = '/home/ascon/factory-mockup'
-# PREFIX = '/home/ichiro/factory-mockup'
+# PREFIX = '/home/ascon/factory-mockup'
+PREFIX = '/home/ichiro/factory-mockup'
 
 # Настройка логирования.
 logging.basicConfig(
@@ -119,49 +120,76 @@ def send_data_to_db(data):
 
 
 def grs():
+    seed(4815162342)
     return randint(0, 3)
+
+
+def cycle_video():
+    play_video(f'{next(videos)}.mp4')
+
+
+def run_cnc_group_1():
+    send_data_to_db((grs(), grs(), grs(), 0, 0, 0, 0, 0))
+    leds.value =    (0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
+
+
+def run_cnc_group_2():
+    send_data_to_db((0, 0, 0, grs(), grs(), grs(), 0, 0))
+    leds.value =    (1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1)
+
+
+def run_cnc_group_3():
+    send_data_to_db((0, 0, 0, 0, 0, 0, grs(), grs()))
+    leds.value =    (1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0)
 
 
 def main():
     start_server()
     start_player()
 
-    delays = [DELAY, DELAY, DELAY, DELAY]
+    button_1.when_pressed = cycle_video
+    button_2.when_pressed = run_cnc_group_1
+    button_3.when_pressed = run_cnc_group_2
+    button_4.when_pressed = run_cnc_group_3
 
-    while True:
-        if button_1.is_pressed:
-            if delays[0]:
-                delays[0] -= 1
-            else:
-                play_video(f'{next(videos)}.mp4')
-                delays[0] = DELAY
+    pause()
 
-        # Выключены -- 0, красный -- 1, желтый -- 2, зеленый -- 3
-        if button_2.is_pressed:
-            if delays[1]:
-                delays[1] -= 1
-            else:
-                send_data_to_db((grs(), grs(), grs(), 0, 0, 0, 0, 0))
-                leds.value =    (0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
-                delays[1] = DELAY
+    # delays = [DELAY, DELAY, DELAY, DELAY]
+
+    # while True:
+    #     if button_1.is_pressed:
+    #         if delays[0]:
+    #             delays[0] -= 1
+    #         else:
+    #             play_video(f'{next(videos)}.mp4')
+    #             delays[0] = DELAY
+
+    #     # Выключены -- 0, красный -- 1, желтый -- 2, зеленый -- 3
+    #     if button_2.is_pressed:
+    #         if delays[1]:
+    #             delays[1] -= 1
+    #         else:
+    #             send_data_to_db((grs(), grs(), grs(), 0, 0, 0, 0, 0))
+    #             leds.value =    (0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
+    #             delays[1] = DELAY
             
-        if button_3.is_pressed:
-            if delays[2]:
-                    delays[2] -= 1
-            else:
-                send_data_to_db((0, 0, 0, grs(), grs(), grs(), 0, 0))
-                leds.value =    (1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1)
-                delays[2] = DELAY
+    #     if button_3.is_pressed:
+    #         if delays[2]:
+    #                 delays[2] -= 1
+    #         else:
+    #             send_data_to_db((0, 0, 0, grs(), grs(), grs(), 0, 0))
+    #             leds.value =    (1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1)
+    #             delays[2] = DELAY
             
-        if button_4.is_pressed:
-            if delays[3]:
-                    delays[3] -= 1
-            else:
-                send_data_to_db((0, 0, 0, 0, 0, 0, grs(), grs()))
-                leds.value =    (1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0)
-                delays[3] = DELAY
+    #     if button_4.is_pressed:
+    #         if delays[3]:
+    #                 delays[3] -= 1
+    #         else:
+    #             send_data_to_db((0, 0, 0, 0, 0, 0, grs(), grs()))
+    #             leds.value =    (1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0)
+    #             delays[3] = DELAY
             
-        time.sleep(0.05)
+    #     time.sleep(0.05)
 
 
 if __name__ == '__main__':

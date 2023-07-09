@@ -24,7 +24,7 @@ from logging.handlers import RotatingFileHandler
 from gpiozero import Button
 from gpiozero import LEDBoard
 
-DELAY = 5
+DELAY = 4
 PREFIX = '/home/ascon/factory-mockup'
 # PREFIX = '/home/ichiro/factory-mockup'
 
@@ -126,27 +126,40 @@ def main():
     start_server()
     start_player()
 
-    delay = DELAY
+    delays = [DELAY, DELAY, DELAY, DELAY]
 
     while True:
-        send_data_to_db((grs(), grs(), grs(), grs(), grs(), grs(), grs(), grs()))
-
         if button_1.is_pressed:
-            if delay:
-                delay -= 1
+            if delays[0]:
+                delays[0] -= 1
             else:
                 play_video(f'{next(videos)}.mp4')
-                delay = DELAY
+                delays[0] = DELAY
 
         # Выключены -- 0, красный -- 1, желтый -- 2, зеленый -- 3
         if button_2.is_pressed:
-            leds.value = (0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
+            if delays[1]:
+                delays[1] -= 1
+            else:
+                send_data_to_db((grs(), grs(), grs(), 0, 0, 0, 0, 0))
+                leds.value =    (0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
+                delays[1] = DELAY
             
         if button_3.is_pressed:
-            leds.value = (1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1)
+            if delays[2]:
+                    delays[2] -= 1
+            else:
+                send_data_to_db((0, 0, 0, grs(), grs(), grs(), 0, 0))
+                leds.value =    (1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1)
+                delays[2] = DELAY
             
         if button_4.is_pressed:
-            leds.value = (1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0)
+            if delays[3]:
+                    delays[3] -= 1
+            else:
+                send_data_to_db((0, 0, 0, 0, 0, 0, grs(), grs()))
+                leds.value =    (1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0)
+                delays[3] = DELAY
             
         time.sleep(0.05)
 
