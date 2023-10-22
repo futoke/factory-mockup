@@ -48,6 +48,20 @@ leds = LEDBoard(14, 15, 18)
 leds.value = (1, 0, 0)
 
 
+def clear_logs():
+    logging.info('Clear logs')
+    commands = [
+        'echo "" > /var/log/kern.log', 
+        'echo "" > /var/log/syslog', 
+        'service syslog restart',
+        'journalctl --vacuum-size=50M'
+    ]
+    try:
+        processes = [Popen(subprocess.cmd, shell=True) for cmd in commands]
+    except Exception as ex:
+        logging.error('Exception occurred', exc_info=True)
+
+
 def start_player():
     logging.info('Start player')
     try:
