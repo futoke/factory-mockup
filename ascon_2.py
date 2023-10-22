@@ -163,6 +163,7 @@ def run_cnc_group_3():
 
 
 def main():
+    clear_logs()
     start_server()
     start_player()
 
