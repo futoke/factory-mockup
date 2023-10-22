@@ -3,6 +3,8 @@
 
 # sudo visudo
 # %sudo   ALL=(ALL:ALL) NOPASSWD:ALL
+# sudo crontab -e
+# */59 * * * * /sbin/shutdown -r now
 
 # mkdir -p /home/ascon/.config/autostart
 # nano /home/ascon/.config/autostart/acson.desktop
