@@ -1,5 +1,8 @@
 # sudo apt install mpv socat
 
+# sudo visudo
+# %sudo   ALL=(ALL:ALL) NOPASSWD:ALL
+
 # mkdir -p /home/ascon/.config/autostart
 # nano /home/ascon/.config/autostart/acson.desktop
 
@@ -51,13 +54,13 @@ leds.value = (1, 0, 0)
 def clear_logs():
     logging.info('Clear logs')
     commands = [
-        'echo "" > /var/log/kern.log', 
-        'echo "" > /var/log/syslog', 
-        'service syslog restart',
-        'journalctl --vacuum-size=50M'
+        'sudo echo "" > /var/log/kern.log', 
+        'sudo echo "" > /var/log/syslog', 
+        'sudo service syslog restart',
+        'sudo journalctl --vacuum-size=50M'
     ]
     try:
-        processes = [Popen(subprocess.cmd, shell=True) for cmd in commands]
+        processes = [subprocess.Popen(cmd, shell=True) for cmd in commands]
     except Exception as ex:
         logging.error('Exception occurred', exc_info=True)
 
@@ -70,7 +73,7 @@ def start_player():
             'mpv',
             # '--hwdec=v4l2m2m',
             '--hwdec=mmal',
-            '--audio-device=alsa/hdmi:CARD=vc4hdmi0,DEV=0',
+            # '--audio-device=alsa/hdmi:CARD=vc4hdmi0,DEV=0',
             '--playlist=/home/ascon/factory-mockup/video/all-1.pls',
             '--fullscreen',
             '--script-opts=osc-showfullscreen=no',
