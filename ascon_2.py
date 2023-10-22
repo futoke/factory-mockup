@@ -91,7 +91,7 @@ def start_player():
             'nohup',
             'mpv',
             '--hwdec=mmal',
-            '--audio-device=alsa/hdmi:CARD=vc4hdmi0,DEV=0',
+            # '--audio-device=alsa/hdmi:CARD=vc4hdmi0,DEV=0',
             f'--playlist={PREFIX}/video/all-2.pls',
             '--fullscreen',
             '--script-opts=osc-showfullscreen=no',
