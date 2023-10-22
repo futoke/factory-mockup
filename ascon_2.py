@@ -62,7 +62,7 @@ videos = cycle((1, 2, 3, 4))
 def clear_logs():
     logging.info('Clear logs')
     commands = [
-        'sudo rm -rf /var/log/kern*.log', 
+        'sudo rm -rf /var/log/kern.log*', 
         'sudo rm -rf /var/log/syslog*', 
         'sudo service syslog restart',
         'sudo journalctl --vacuum-size=50M'
