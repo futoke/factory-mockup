@@ -104,6 +104,7 @@ def play_video(filename):
 
 
 def main():
+    clear_logs()
     start_player()
 
     while True:
