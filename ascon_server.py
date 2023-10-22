@@ -1,3 +1,4 @@
+import time
 import sqlite3
 import logging
 
@@ -24,6 +25,8 @@ logging.basicConfig(
   level=logging.INFO,
   format='%(asctime)s %(levelname)s PID %(process)d %(message)s'
 )
+
+time.sleep(15)
 
 conf.SIGNED_VALUES = True
 TCPServer.allow_reuse_address = True
